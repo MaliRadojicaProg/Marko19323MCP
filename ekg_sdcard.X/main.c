@@ -236,18 +236,18 @@ void pack_samples()
   // ADC_sample[2]=Sample2
   // jedan ADC_sample ima 10 bita a ByteX 8 bita
   // prvih 6 su nule kod ADC_sample
-  ByteX[0]= (unsigned char)((ADC_sample[0] & 0x03ff)>>2); //9:2
-  Bytex[1]=  (unsigned char)((ADC_sample[0] & 0x0003) <<14 | (ADC_sample[1] & 0x03f0));
-  Bytex[2]=  (unsigned char)((ADC_sample[1] & 0x000f ) <<12 | (ADC_sample[2] & 0x03c0));
-  Bytex[3]=  (unsigned char)((ADC_sample[2] & 0x001f) <<10);
+  ByteX[0]= (unsigned char)((ADC_sample[0])>>2); //9:2
+  ByteX[1]=  (unsigned char)((ADC_sample[0] & 0x0003) <<6 | (ADC_sample[1] & 0x03f0));
+  ByteX[2]=  (unsigned char)((ADC_sample[1] & 0x000f ) <<4 | (ADC_sample[2] & 0x03c0));
+  ByteX[3]=  (unsigned char)((ADC_sample[2] & 0x001f) <<2);
 }
 
 void unpack_samples()
 {
     // NAPISATI OVDE PROGRAMSKI KOD - ZADATAK 1
-    ADC_sample2[0]=(int)((ByteX[0]) | (ByteX[1] & 0xC0) >> 6);
-    ADC_sample2[1]=(int)((ByteX[1] & 0x30) <<2  | (ByteX[2] & 0xf0 )>>4);
-    ADC_sample2[2]=(int)((ByteX[2] & 0x0f) <<4 | (ByteX[3] & 0xfc)); 
+    ADC_sample2[0]=(unsigned int)((ByteX[0]<<2) | (ByteX[1] >>6);
+    ADC_sample2[1]=(unsigned int)((ByteX[1] & 0x3f)<<2  | (ByteX[2] & 0xf0));
+    ADC_sample2[2]=(unsigned int)((ByteX[2] & 0x0f) <<4 | (ByteX[3] & 0xfc)); 
 }
 
 void writeBuffer(unsigned int Result)
@@ -268,14 +268,10 @@ void writeBuffer(unsigned int Result)
         else
             Buffer = Buffer1;
         // NAPISATI OVDE PROGRAMSKI KOD - ZADATAK 2
-        if(addrcalc == 4)
-          addrcalc=0;
-        else 
-          addrcalc++;
-        
-          Buffer[Buffer_count*4+addrcalc]=ByteX[addrcalc];
-
-
+          Buffer[(Buffer_count<<2)+0]=ByteX[0];
+          Buffer[(Buffer_count<<2)+1]=ByteX[1];
+          Buffer[(Buffer_count<<2)+2]=ByteX[2];
+          Buffer[(Buffer_count<<2)+3]=ByteX[3];
         if (Buffer_count < 127)
         {
             Buffer_count++;
@@ -311,11 +307,11 @@ void __interrupt(low_priority) ISR()
         PIR1bits.ADIF = 0; //Konverzija nije gotova
        // NAPISATI OVDE PROGRAMSKI KOD - ZADATAK 3
       // prekid AD konverzija
-      Result=(ADRESH <<8) | ADRESL;
-      if(mode_event=false){
+      Result=(ADRESH <<8) | ADRESL);
+      if(mode_event==0){
       FlagTransmit=1;
       }
-      else if(mode_event & write_event){
+      else if(write_event == 1){
         writeBuffer(Result);
       }
     }
@@ -404,21 +400,16 @@ int main()
             {
                 SD_readSingleBlock(address, Buffer1);
                 // NAPISATI OVDE PROGRAMSKI KOD - ZADATAK 4
-                for(int i=0;i<=3;i++){
-                  ByteX[i]=Buffer1[adr*4+i];
-                  unpack_samples();
-                  pack(ADC_sample2[acR]);
-                  transmit();
-                  if(addr<127)
-                      addr++;
-                  else 
-                    addr=0;
-                if(acR<3)
-                      acR++;
-                  else 
-                    acR=0;
-
-                  __delay_ms(4);
+                for(adr=0;adr<127;adr++){
+                    for(int i=0;i<=3;i++){
+                       ByteX[i]=Buffer1[(adr<<2)+i];
+                    }
+                      unpack_samples();
+                    for(int i=0;i<=2;i++){
+                      pack(ADC_sample2[i]);
+                      transmit();
+                      __delay_ms(4);
+                    }
                 }
                
                             }
