@@ -1,0 +1,606 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F2520 ]
+[d frameptr 4065 ]
+"108 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+[e E2278 . `uc
+SPI_MASTER_OSC_DIV4 32
+SPI_MASTER_OSC_DIV16 33
+SPI_MASTER_OSC_DIV64 34
+SPI_MASTER_TMR2 35
+SPI_SLAVE_SS_EN 36
+SPI_SLAVE_SS_DIS 37
+]
+[e E2286 . `uc
+SPI_DATA_SAMPLE_MIDDLE 0
+SPI_DATA_SAMPLE_END 128
+]
+[e E2290 . `uc
+SPI_CLOCK_IDLE_HIGH 16
+SPI_CLOCK_IDLE_LOW 0
+]
+[e E2294 . `uc
+SPI_IDLE_2_ACTIVE 0
+SPI_ACTIVE_2_IDLE 64
+]
+"5 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+[e E2 . `uc
+SPI_MASTER_OSC_DIV4 32
+SPI_MASTER_OSC_DIV16 33
+SPI_MASTER_OSC_DIV64 34
+SPI_MASTER_TMR2 35
+SPI_SLAVE_SS_EN 36
+SPI_SLAVE_SS_DIS 37
+]
+[e E10 . `uc
+SPI_DATA_SAMPLE_MIDDLE 0
+SPI_DATA_SAMPLE_END 128
+]
+[e E14 . `uc
+SPI_CLOCK_IDLE_HIGH 16
+SPI_CLOCK_IDLE_LOW 0
+]
+[e E18 . `uc
+SPI_IDLE_2_ACTIVE 0
+SPI_ACTIVE_2_IDLE 64
+]
+"4 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"106 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+[v _init_SDMMC init_SDMMC `(i  1 e 2 0 ]
+"114
+[v _init_variables init_variables `(v  1 e 1 0 ]
+"123
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+"139
+[v _init init `(v  1 e 1 0 ]
+"208
+[v _pack pack `(v  1 e 1 0 ]
+"216
+[v _transmit transmit `(v  1 e 1 0 ]
+"225
+[v _pack_samples pack_samples `(v  1 e 1 0 ]
+"232
+[v _unpack_samples unpack_samples `(v  1 e 1 0 ]
+"238
+[v _writeBuffer writeBuffer `(v  1 e 1 0 ]
+"282
+[v _ISR ISR `IIL(v  1 e 1 0 ]
+"338
+[v _main main `(i  1 e 2 0 ]
+"16 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+[v _SD_init SD_init `(uc  1 e 1 0 ]
+"102
+[v _SD_sendCommand SD_sendCommand `(uc  1 e 1 0 ]
+"188
+[v _SD_readSingleBlock SD_readSingleBlock `(uc  1 e 1 0 ]
+"225
+[v _SD_writeSingleBlock SD_writeSingleBlock `(uc  1 e 1 0 ]
+"5 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+[v _SPI1_Init SPI1_Init `(v  1 e 1 0 ]
+"27
+[v _SPI1_ReceiveWait SPI1_ReceiveWait `(v  1 s 1 SPI1_ReceiveWait ]
+"41
+[v _SPI1_Read SPI1_Read `(uc  1 e 1 0 ]
+"49
+[v _SPI1_Write SPI1_Write `(v  1 e 1 0 ]
+"52 F:\Program Files\Microchip\xc8\v2.50\pic\include\proc/pic18f2520.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+"271
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+[s S208 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"315
+[s S217 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 CCP2 1 0 :1:3 
+`uc 1 KBI0 1 0 :1:4 
+`uc 1 KBI1 1 0 :1:5 
+`uc 1 KBI2 1 0 :1:6 
+`uc 1 KBI3 1 0 :1:7 
+]
+[s S226 . 1 `uc 1 AN12 1 0 :1:0 
+`uc 1 AN10 1 0 :1:1 
+`uc 1 AN8 1 0 :1:2 
+`uc 1 AN9 1 0 :1:3 
+`uc 1 AN11 1 0 :1:4 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S235 . 1 `uc 1 FLT0 1 0 :1:0 
+]
+[s S237 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S240 . 1 `S208 1 . 1 0 `S217 1 . 1 0 `S226 1 . 1 0 `S235 1 . 1 0 `S237 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES240  1 e 1 @3969 ]
+"450
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"1036
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1258
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1480
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S52 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1512
+[s S61 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S70 . 1 `S52 1 . 1 0 `S61 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES70  1 e 1 @3988 ]
+"1767
+[v _PIE1 PIE1 `VEuc  1 e 1 @3997 ]
+[s S280 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+`uc 1 CCP1IE 1 0 :1:2 
+`uc 1 SSPIE 1 0 :1:3 
+`uc 1 TXIE 1 0 :1:4 
+`uc 1 RCIE 1 0 :1:5 
+`uc 1 ADIE 1 0 :1:6 
+]
+"1788
+[s S288 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+]
+[u S292 . 1 `S280 1 . 1 0 `S288 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES292  1 e 1 @3997 ]
+[s S308 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+`uc 1 CCP1IF 1 0 :1:2 
+`uc 1 SSPIF 1 0 :1:3 
+`uc 1 TXIF 1 0 :1:4 
+`uc 1 RCIF 1 0 :1:5 
+`uc 1 ADIF 1 0 :1:6 
+]
+"1859
+[s S316 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+]
+[u S320 . 1 `S308 1 . 1 0 `S316 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES320  1 e 1 @3998 ]
+"2265
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+[s S94 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2514
+[s S103 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S112 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S115 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S117 . 1 `S94 1 . 1 0 `S103 1 . 1 0 `S112 1 . 1 0 `S115 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES117  1 e 1 @4012 ]
+"2731
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"2755
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"2767
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+[s S146 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 TXCKP 1 0 :1:4 
+`uc 1 RXDTP 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"3282
+[s S155 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCMT 1 0 :1:6 
+]
+[s S160 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RXCKP 1 0 :1:5 
+]
+[s S163 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 W4E 1 0 :1:1 
+]
+[u S166 . 1 `S146 1 . 1 0 `S155 1 . 1 0 `S160 1 . 1 0 `S163 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES166  1 e 1 @4024 ]
+"3626
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"3697
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"3782
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S387 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"3826
+[s S390 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S394 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S401 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S404 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S407 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S410 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S413 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S416 . 1 `S387 1 . 1 0 `S390 1 . 1 0 `S394 1 . 1 0 `S401 1 . 1 0 `S404 1 . 1 0 `S407 1 . 1 0 `S410 1 . 1 0 `S413 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES416  1 e 1 @4034 ]
+"3908
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"3915
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"4017
+[v _SSPCON1 SSPCON1 `VEuc  1 e 1 @4038 ]
+"4087
+[v _SSPSTAT SSPSTAT `VEuc  1 e 1 @4039 ]
+[s S670 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_NOT_W 1 0 :1:2 
+]
+"4163
+[s S673 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 D_NOT_A 1 0 :1:5 
+]
+[s S676 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+[s S685 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D 1 0 :1:5 
+]
+[s S690 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 A 1 0 :1:5 
+]
+[s S695 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S700 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S705 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_WRITE 1 0 :1:2 
+]
+[s S708 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_ADDRESS 1 0 :1:5 
+]
+[s S711 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S716 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S722 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NOT_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 NOT_A 1 0 :1:5 
+]
+[u S727 . 1 `S670 1 . 1 0 `S673 1 . 1 0 `S676 1 . 1 0 `S685 1 . 1 0 `S690 1 . 1 0 `S695 1 . 1 0 `S700 1 . 1 0 `S705 1 . 1 0 `S708 1 . 1 0 `S711 1 . 1 0 `S716 1 . 1 0 `S722 1 . 1 0 ]
+[v _SSPSTATbits SSPSTATbits `VES727  1 e 1 @4039 ]
+"4315
+[v _SSPBUF SSPBUF `VEuc  1 e 1 @4041 ]
+"5175
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"5265
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"5272
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+"5629
+[v _INTCON2 INTCON2 `VEuc  1 e 1 @4081 ]
+"5699
+[v _INTCON INTCON `VEuc  1 e 1 @4082 ]
+[s S338 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"5731
+[s S347 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S356 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S360 . 1 `S338 1 . 1 0 `S347 1 . 1 0 `S356 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES360  1 e 1 @4082 ]
+"83 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+[v _ADC_count ADC_count `i  1 e 2 0 ]
+"84
+[v _ADC_sample ADC_sample `[3]i  1 e 6 0 ]
+"85
+[v _ByteX ByteX `[4]uc  1 e 4 0 ]
+"86
+[v _ADC_sample2 ADC_sample2 `[3]i  1 e 6 0 ]
+"87
+[v _data_pack data_pack `[14]uc  1 e 14 0 ]
+"90
+[v _Buffer1 Buffer1 `[512]uc  1 e 512 0 ]
+"91
+[v _Buffer2 Buffer2 `[512]uc  1 e 512 0 ]
+"92
+[v _Buffer Buffer `*.39uc  1 e 2 0 ]
+"94
+[v _Buffer_count Buffer_count `ui  1 e 2 0 ]
+"95
+[v _Buffer_count2 Buffer_count2 `ui  1 e 2 0 ]
+"96
+[v _Buffer_sel Buffer_sel `ui  1 e 2 0 ]
+"98
+[v _mode_event mode_event `uc  1 e 1 0 ]
+"99
+[v _read_event read_event `uc  1 e 1 0 ]
+"100
+[v _write_event write_event `uc  1 e 1 0 ]
+"101
+[v _cntTas cntTas `uc  1 e 1 0 ]
+"102
+[v _FlagUSD FlagUSD `uc  1 e 1 0 ]
+"103
+[v _FlagTransmit FlagTransmit `uc  1 e 1 0 ]
+"104
+[v _Result Result `ui  1 e 2 0 ]
+"13 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+[v _startBlock startBlock `VEul  1 e 4 0 ]
+[v _totalBlocks totalBlocks `VEul  1 e 4 0 ]
+"14
+[v _SDHC_flag SDHC_flag `VEuc  1 e 1 0 ]
+[v _cardType cardType `VEuc  1 e 1 0 ]
+"338 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+[v _main main `(i  1 e 2 0 ]
+{
+"339
+[v main@startBlock startBlock `ul  1 a 4 4 ]
+"340
+[v main@address address `ul  1 a 4 0 ]
+"389
+} 0
+"232
+[v _unpack_samples unpack_samples `(v  1 e 1 0 ]
+{
+"236
+} 0
+"216
+[v _transmit transmit `(v  1 e 1 0 ]
+{
+"217
+[v transmit@i i `i  1 a 2 18 ]
+"223
+} 0
+"208
+[v _pack pack `(v  1 e 1 0 ]
+{
+"209
+[v pack@i i `i  1 a 2 22 ]
+"208
+[v pack@Sample Sample `ui  1 p 2 18 ]
+"214
+} 0
+"114
+[v _init_variables init_variables `(v  1 e 1 0 ]
+{
+"121
+} 0
+"139
+[v _init init `(v  1 e 1 0 ]
+{
+"140
+[v init@ret ret `i  1 a 2 41 ]
+"206
+} 0
+"106
+[v _init_SDMMC init_SDMMC `(i  1 e 2 0 ]
+{
+"107
+[v init_SDMMC@ret ret `i  1 a 2 39 ]
+"112
+} 0
+"5 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+[v _SPI1_Init SPI1_Init `(v  1 e 1 0 ]
+{
+[v SPI1_Init@sType sType `E2  1 p 1 wreg ]
+[v SPI1_Init@sType sType `E2  1 p 1 wreg ]
+[v SPI1_Init@sDataSample sDataSample `E10  1 p 1 18 ]
+[v SPI1_Init@sClockIdle sClockIdle `E14  1 p 1 19 ]
+[v SPI1_Init@sTransmitEdge sTransmitEdge `E18  1 p 1 20 ]
+"21
+[v SPI1_Init@sType sType `E2  1 p 1 21 ]
+"25
+} 0
+"16 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+[v _SD_init SD_init `(uc  1 e 1 0 ]
+{
+"18
+[v SD_init@retry retry `ui  1 a 2 34 ]
+"17
+[v SD_init@response response `uc  1 a 1 33 ]
+[v SD_init@i i `uc  1 a 1 32 ]
+[v SD_init@SD_version SD_version `uc  1 a 1 31 ]
+"93
+} 0
+"123 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+{
+"137
+} 0
+"225 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+[v _SD_writeSingleBlock SD_writeSingleBlock `(uc  1 e 1 0 ]
+{
+"227
+[v SD_writeSingleBlock@i i `ui  1 a 2 40 ]
+[v SD_writeSingleBlock@retry retry `ui  1 a 2 37 ]
+"226
+[v SD_writeSingleBlock@response response `uc  1 a 1 39 ]
+"225
+[v SD_writeSingleBlock@startBlock startBlock `ul  1 p 4 31 ]
+[v SD_writeSingleBlock@Buffer1 Buffer1 `*.39uc  1 p 2 35 ]
+"267
+} 0
+"188
+[v _SD_readSingleBlock SD_readSingleBlock `(uc  1 e 1 0 ]
+{
+"190
+[v SD_readSingleBlock@i i `ui  1 a 2 40 ]
+[v SD_readSingleBlock@retry retry `ui  1 a 2 37 ]
+"189
+[v SD_readSingleBlock@response response `uc  1 a 1 39 ]
+"188
+[v SD_readSingleBlock@startBlock startBlock `ul  1 p 4 31 ]
+[v SD_readSingleBlock@Buffer1 Buffer1 `*.39uc  1 p 2 35 ]
+"216
+} 0
+"102
+[v _SD_sendCommand SD_sendCommand `(uc  1 e 1 0 ]
+{
+[v SD_sendCommand@cmd cmd `uc  1 p 1 wreg ]
+"103
+[v SD_sendCommand@response response `uc  1 a 1 29 ]
+[v SD_sendCommand@status1 status1 `uc  1 a 1 28 ]
+[v SD_sendCommand@retry retry `uc  1 a 1 27 ]
+"102
+[v SD_sendCommand@cmd cmd `uc  1 p 1 wreg ]
+[v SD_sendCommand@arg arg `ul  1 p 4 19 ]
+"104
+[v SD_sendCommand@cmd cmd `uc  1 p 1 30 ]
+"151
+} 0
+"49 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+[v _SPI1_Write SPI1_Write `(v  1 e 1 0 ]
+{
+[v SPI1_Write@dat dat `uc  1 p 1 wreg ]
+[v SPI1_Write@dat dat `uc  1 p 1 wreg ]
+[v SPI1_Write@dat dat `uc  1 p 1 18 ]
+"55
+} 0
+"41
+[v _SPI1_Read SPI1_Read `(uc  1 e 1 0 ]
+{
+[v SPI1_Read@d d `uc  1 p 1 wreg ]
+[v SPI1_Read@d d `uc  1 p 1 wreg ]
+[v SPI1_Read@d d `uc  1 p 1 18 ]
+"47
+} 0
+"27
+[v _SPI1_ReceiveWait SPI1_ReceiveWait `(v  1 s 1 SPI1_ReceiveWait ]
+{
+"31
+} 0
+"282 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+[v _ISR ISR `IIL(v  1 e 1 0 ]
+{
+"336
+} 0
+"238
+[v _writeBuffer writeBuffer `(v  1 e 1 0 ]
+{
+[v writeBuffer@Result Result `ui  1 p 2 3 ]
+"280
+} 0
+"225
+[v _pack_samples pack_samples `(v  1 e 1 0 ]
+{
+"230
+} 0

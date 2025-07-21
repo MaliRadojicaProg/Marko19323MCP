@@ -1,0 +1,830 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/default/production\ekg_sdcard.X.production.o
+intcodelo CODE 0 18 18 21E 1 2
+cinit CODE 0 11A0 11A0 2A 1 2
+idloc IDLOC 5 200000 200000 8 1 1
+text0 CODE 0 602 602 288 1 2
+text1 CODE 0 F1A F1A 90 1 2
+text2 CODE 0 10E8 10E8 4C 1 2
+text3 CODE 0 1026 1026 62 1 2
+text4 CODE 0 116E 116E 32 1 2
+text5 CODE 0 1088 1088 60 1 2
+text6 CODE 0 1134 1134 3A 1 2
+text7 CODE 0 11E6 11E6 10 1 2
+text8 CODE 0 88A 88A 1B6 1 2
+text9 CODE 0 11CA 11CA 1C 1 2
+text10 CODE 0 D56 D56 10E 1 2
+text11 CODE 0 E64 E64 B6 1 2
+text12 CODE 0 BD4 BD4 182 1 2
+text13 CODE 0 1206 1206 E 1 2
+text14 CODE 0 1214 1214 E 1 2
+text15 CODE 0 11F6 11F6 10 1 2
+text17 CODE 0 A40 A40 194 1 2
+text18 CODE 0 FAA FAA 7C 1 2
+cstackCOMRAM COMRAM 1 3B 3B 2F 1 1
+cstackBANK0 BANK0 1 80 80 8 1 1
+temp COMRAM 1 6A 6A 1 1 1
+smallconst SMALLCONST 0 600 600 2 1 2
+bssBIGRAM BIGRAM 1 88 88 400 1 1
+bssCOMRAM COMRAM 1 1 1 3A 1 1
+config CONFIG 4 300000 300000 E 1 1
+$C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+idloc IDLOC 5 200000 200000 8 1 1
+init CODE 0 236 236 4 1 2
+reset_vec CODE 0 0 0 4 1 2
+config CONFIG 4 300000 300000 E 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 488-5FF 1
+SFR F80-FFF 1
+BANK4 488-4FF 1
+BANK5 500-5FF 1
+CONST 4-17 1
+CONST 23A-5FF 1
+CONST 1222-7FFF 1
+SMALLCONST 1222-7FFF 1
+CODE 4-17 1
+CODE 23A-5FF 1
+CODE 1222-7FFF 1
+BIGRAM 6B-7F 1
+BIGRAM 488-5FF 1
+BIGSFR F80-FFF 1
+COMRAM 6B-7F 1
+EEDATA F00000-F000FF 1
+MEDIUMCONST 1222-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\ekg_sdcard.X.production.o
+18 intcodelo CODE >4401:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+18 intcodelo CODE >282:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+36 intcodelo CODE >284:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+52 intcodelo CODE >285:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+54 intcodelo CODE >286:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+66 intcodelo CODE >288:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+76 intcodelo CODE >289:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+7E intcodelo CODE >290:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+8E intcodelo CODE >291:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+9A intcodelo CODE >294:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+A8 intcodelo CODE >296:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+AA intcodelo CODE >297:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+AC intcodelo CODE >299:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+BC intcodelo CODE >300:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+BE intcodelo CODE >302:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+FC intcodelo CODE >303:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+102 intcodelo CODE >305:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+112 intcodelo CODE >306:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+118 intcodelo CODE >307:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+118 intcodelo CODE >308:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11A intcodelo CODE >309:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+122 intcodelo CODE >310:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+12A intcodelo CODE >311:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+132 intcodelo CODE >312:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+13A intcodelo CODE >313:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+13A intcodelo CODE >314:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+13E intcodelo CODE >317:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+18C intcodelo CODE >318:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+190 intcodelo CODE >319:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+192 intcodelo CODE >320:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+196 intcodelo CODE >323:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1E4 intcodelo CODE >324:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1E8 intcodelo CODE >325:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1EA intcodelo CODE >326:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1F2 intcodelo CODE >327:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1FA intcodelo CODE >328:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+202 intcodelo CODE >329:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+20A intcodelo CODE >330:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+20E intcodelo CODE >331:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+20E intcodelo CODE >333:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+212 intcodelo CODE >334:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+216 intcodelo CODE >336:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+FAA text18 CODE >225:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+FAA text18 CODE >226:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+FC2 text18 CODE >227:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+FEA text18 CODE >228:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1012 text18 CODE >229:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1024 text18 CODE >230:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+A40 text17 CODE >238:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+A40 text17 CODE >239:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+A54 text17 CODE >241:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+A68 text17 CODE >242:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+A74 text17 CODE >244:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+A78 text17 CODE >246:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+A8A text17 CODE >247:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+A8E text17 CODE >249:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+AA0 text17 CODE >250:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+AAC text17 CODE >252:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+AB4 text17 CODE >254:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+AD0 text17 CODE >255:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+B00 text17 CODE >256:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+B30 text17 CODE >257:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+B60 text17 CODE >259:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+B76 text17 CODE >260:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+B7A text17 CODE >261:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+B7E text17 CODE >262:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+B86 text17 CODE >264:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+B96 text17 CODE >266:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+BA8 text17 CODE >267:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+BAE text17 CODE >268:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+BAE text17 CODE >269:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+BB0 text17 CODE >271:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+BB4 text17 CODE >273:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+BCA text17 CODE >274:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+BCC text17 CODE >275:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+BCE text17 CODE >277:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+BD2 text17 CODE >280:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11F6 text15 CODE >27:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+11F6 text15 CODE >29:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+11F6 text15 CODE >30:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+1204 text15 CODE >31:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+1214 text14 CODE >41:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+1216 text14 CODE >43:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+1216 text14 CODE >44:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+121A text14 CODE >45:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+121E text14 CODE >46:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+1220 text14 CODE >47:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+1206 text13 CODE >49:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+1208 text13 CODE >51:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+1208 text13 CODE >52:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+120C text13 CODE >53:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+1210 text13 CODE >54:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+1212 text13 CODE >55:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+BD4 text12 CODE >102:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+BD6 text12 CODE >104:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+BD8 text12 CODE >111:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+BE8 text12 CODE >112:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+C54 text12 CODE >118:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+C86 text12 CODE >120:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+C88 text12 CODE >122:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+C90 text12 CODE >123:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+C96 text12 CODE >124:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+C9C text12 CODE >125:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+CA2 text12 CODE >126:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+CA8 text12 CODE >128:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+CBA text12 CODE >129:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+CC4 text12 CODE >131:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+CCE text12 CODE >133:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+CCE text12 CODE >134:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+CD8 text12 CODE >133:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+CF0 text12 CODE >136:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D12 text12 CODE >138:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D1C text12 CODE >139:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D36 text12 CODE >140:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D38 text12 CODE >142:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D3E text12 CODE >143:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D44 text12 CODE >144:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D4A text12 CODE >145:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D4A text12 CODE >147:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D50 text12 CODE >148:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D52 text12 CODE >150:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D54 text12 CODE >151:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E64 text11 CODE >188:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E64 text11 CODE >190:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E64 text11 CODE >192:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E7C text11 CODE >195:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E90 text11 CODE >197:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E92 text11 CODE >199:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E9A text11 CODE >200:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E9E text11 CODE >201:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+EB4 text11 CODE >202:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+EBA text11 CODE >200:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+ED0 text11 CODE >206:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+ED8 text11 CODE >207:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+F02 text11 CODE >209:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+F08 text11 CODE >210:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+F0E text11 CODE >212:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+F18 text11 CODE >216:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D56 text10 CODE >225:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D56 text10 CODE >227:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D5E text10 CODE >229:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D76 text10 CODE >231:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D8A text10 CODE >233:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D8C text10 CODE >235:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D92 text10 CODE >236:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+D9A text10 CODE >237:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+DC2 text10 CODE >239:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+DC8 text10 CODE >240:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+DCE text10 CODE >242:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+DD6 text10 CODE >243:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+DEA text10 CODE >246:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+DF0 text10 CODE >251:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E0A text10 CODE >250:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E20 text10 CODE >256:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E22 text10 CODE >257:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E28 text10 CODE >258:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E2A text10 CODE >260:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E2E text10 CODE >261:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E48 text10 CODE >260:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+E62 text10 CODE >267:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+11CA text9 CODE >123:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11CA text9 CODE >125:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11CC text9 CODE >126:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11CE text9 CODE >128:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11D2 text9 CODE >129:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11D4 text9 CODE >130:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11D6 text9 CODE >131:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11D8 text9 CODE >132:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11DA text9 CODE >133:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11DC text9 CODE >134:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11DE text9 CODE >135:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11E0 text9 CODE >136:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11E4 text9 CODE >137:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+88A text8 CODE >16:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+88A text8 CODE >18:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+892 text8 CODE >22:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+894 text8 CODE >23:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+8AC text8 CODE >27:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+8AE text8 CODE >30:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+8C6 text8 CODE >31:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+8CA text8 CODE >32:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+8E4 text8 CODE >33:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+8F4 text8 CODE >35:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+8F6 text8 CODE >36:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+8FC text8 CODE >37:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+902 text8 CODE >38:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+90A text8 CODE >42:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+90E text8 CODE >46:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+926 text8 CODE >48:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+92A text8 CODE >49:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+93E text8 CODE >51:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+942 text8 CODE >52:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+946 text8 CODE >54:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+94A text8 CODE >56:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+95A text8 CODE >58:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+962 text8 CODE >62:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+978 text8 CODE >63:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+990 text8 CODE >64:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+994 text8 CODE >65:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+9A8 text8 CODE >67:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+9AE text8 CODE >69:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+9BE text8 CODE >71:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+9C6 text8 CODE >72:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+9C8 text8 CODE >75:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+9DA text8 CODE >77:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+9F2 text8 CODE >78:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+9F6 text8 CODE >79:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+A0A text8 CODE >81:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+A0C text8 CODE >82:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+A10 text8 CODE >84:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+A20 text8 CODE >86:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+A38 text8 CODE >87:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+A3C text8 CODE >92:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+A3E text8 CODE >93:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\sd_routines.c
+11E6 text7 CODE >5:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+11E8 text7 CODE >21:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+11EE text7 CODE >24:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+11F4 text7 CODE >25:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\spi.c
+1134 text6 CODE >106:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1134 text6 CODE >107:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1134 text6 CODE >108:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1146 text6 CODE >109:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1152 text6 CODE >110:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1164 text6 CODE >111:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+116C text6 CODE >112:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1088 text5 CODE >139:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1088 text5 CODE >140:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1088 text5 CODE >141:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+108C text5 CODE >142:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+108E text5 CODE >146:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1092 text5 CODE >147:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1096 text5 CODE >159:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+109A text5 CODE >160:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+109C text5 CODE >171:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10A0 text5 CODE >172:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10A4 text5 CODE >173:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10A8 text5 CODE >175:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10AC text5 CODE >177:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10B0 text5 CODE >178:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10B4 text5 CODE >187:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10B8 text5 CODE >189:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10BC text5 CODE >191:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10C0 text5 CODE >195:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10C4 text5 CODE >201:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10C6 text5 CODE >202:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10D2 text5 CODE >204:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10E4 text5 CODE >205:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10E6 text5 CODE >206:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+116E text4 CODE >114:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+116E text4 CODE >115:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1176 text4 CODE >116:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+117E text4 CODE >117:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1186 text4 CODE >118:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+118E text4 CODE >119:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1196 text4 CODE >120:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+119E text4 CODE >121:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1026 text3 CODE >208:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1026 text3 CODE >209:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+102E text3 CODE >210:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1058 text3 CODE >211:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+105C text3 CODE >212:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1074 text3 CODE >213:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1086 text3 CODE >214:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10E8 text2 CODE >216:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10E8 text2 CODE >217:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10F0 text2 CODE >218:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+10F8 text2 CODE >219:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1104 text2 CODE >220:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1104 text2 CODE >221:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1112 text2 CODE >222:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+1132 text2 CODE >223:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+F1A text1 CODE >232:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+F1A text1 CODE >233:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+F4A text1 CODE >234:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+F7A text1 CODE >235:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+FA8 text1 CODE >236:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+602 text0 CODE >338:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+602 text0 CODE >339:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+614 text0 CODE >342:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+618 text0 CODE >343:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+61C text0 CODE >345:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+61C text0 CODE >346:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+62C text0 CODE >347:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+62E text0 CODE >348:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+640 text0 CODE >349:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+66A text0 CODE >351:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+690 text0 CODE >354:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+6A0 text0 CODE >356:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+6A2 text0 CODE >357:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+6AE text0 CODE >358:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+6B2 text0 CODE >361:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+6C2 text0 CODE >362:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+6CA text0 CODE >363:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+6E8 text0 CODE >364:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+704 text0 CODE >365:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+726 text0 CODE >366:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+74A text0 CODE >367:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+776 text0 CODE >368:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+7A2 text0 CODE >369:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+7CE text0 CODE >371:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+7D2 text0 CODE >373:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+7DE text0 CODE >374:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+7E2 text0 CODE >375:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+7F2 text0 CODE >376:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+7FE text0 CODE >377:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+802 text0 CODE >378:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+812 text0 CODE >379:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+81E text0 CODE >380:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+822 text0 CODE >381:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+832 text0 CODE >382:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+83A text0 CODE >383:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+87E text0 CODE >384:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+880 text0 CODE >385:D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\ekg_sdcard.X\main.c
+11A0 cinit CODE >1054:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11A0 cinit CODE >1056:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11A0 cinit CODE >1059:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11A0 cinit CODE >1139:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11A4 cinit CODE >1140:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11A8 cinit CODE >1141:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11A8 cinit CODE >1142:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11AA cinit CODE >1143:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11AC cinit CODE >1144:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11AE cinit CODE >1145:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11B0 cinit CODE >1146:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11B2 cinit CODE >1147:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11B4 cinit CODE >1150:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11B8 cinit CODE >1151:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11BA cinit CODE >1152:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11BA cinit CODE >1153:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11BC cinit CODE >1154:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11BE cinit CODE >1155:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11C0 cinit CODE >1161:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11C0 cinit CODE >1163:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11C2 cinit CODE >1164:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11C4 cinit CODE >1165:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+11C6 cinit CODE >1166:C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\ekg_sdcard.X.production.o
+__Hspace_0 1222 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Hspace_1 488 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Hspace_2 0 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Hspace_4 60000E 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+SPI1_Init@sClockIdle 4E 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+SD_sendCommand@response 58 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+SD_init@i 5B 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/default/production\ekg_sdcard.X.production.o
+SD_writeSingleBlock@startBlock 5A 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__mediumconst 0 0 MEDIUMCONST 0 mediumconst C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\ekg_sdcard.X.production.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\ekg_sdcard.X.production.o
+__Lsmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\ekg_sdcard.X.production.o
+_PIE1 F9D 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+___sp 0 0 STACK 2 stack C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+_init 1088 0 CODE 0 text5 dist/default/production\ekg_sdcard.X.production.o
+_main 602 0 CODE 0 text0 dist/default/production\ekg_sdcard.X.production.o
+_pack 1026 0 CODE 0 text3 dist/default/production\ekg_sdcard.X.production.o
+btemp 6A 0 COMRAM 1 temp dist/default/production\ekg_sdcard.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+__HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\ekg_sdcard.X.production.o
+start 236 0 CODE 0 init C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+__end_of_SD_writeSingleBlock E64 0 CODE 0 text10 dist/default/production\ekg_sdcard.X.production.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+pack@i 51 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_init_variables 116E 0 CODE 0 text4 dist/default/production\ekg_sdcard.X.production.o
+_ADC_count 31 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+SD_sendCommand@arg 4E 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+SD_sendCommand@cmd 59 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+SD_sendCommand@retry 56 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_Buffer1 288 0 BIGRAM 1 bssBIGRAM dist/default/production\ekg_sdcard.X.production.o
+_Buffer2 88 0 BIGRAM 1 bssBIGRAM dist/default/production\ekg_sdcard.X.production.o
+_ADC_sample2 F 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_totalBlocks 1B 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Hpowerup 236 0 CODE 0 powerup dist/default/production\ekg_sdcard.X.production.o
+_SPI1_Write 1206 0 CODE 0 text13 dist/default/production\ekg_sdcard.X.production.o
+ttemp5 6B 0 COMRAM 1 temp dist/default/production\ekg_sdcard.X.production.o
+ttemp6 6E 0 COMRAM 1 temp dist/default/production\ekg_sdcard.X.production.o
+ttemp7 72 0 COMRAM 1 temp dist/default/production\ekg_sdcard.X.production.o
+__LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\ekg_sdcard.X.production.o
+__accesstop 80 0 ABS 0 - C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+SPI1_Init@sTransmitEdge 4F 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_writeBuffer A40 0 CODE 0 text17 dist/default/production\ekg_sdcard.X.production.o
+SD_writeSingleBlock@Buffer1 5E 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\ekg_sdcard.X.production.o
+wtemp8 6B 0 COMRAM 1 temp dist/default/production\ekg_sdcard.X.production.o
+SPI1_Init@sType 50 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Hifardata 0 0 CODE 0 ifardata dist/default/production\ekg_sdcard.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext dist/default/production\ekg_sdcard.X.production.o
+__end_of_SD_readSingleBlock F1A 0 CODE 0 text11 dist/default/production\ekg_sdcard.X.production.o
+SD_writeSingleBlock@retry 60 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_mode_event 3A 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_ADCON0 FC2 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_ADCON1 FC1 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_ADCON2 FC0 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_ADRESH FC4 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_ADRESL FC3 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__end_of_init_variables 11A0 0 CODE 0 text4 dist/default/production\ekg_sdcard.X.production.o
+SPI1_Read@d 4D 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+_Buffer 2F 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+SPI1_Init@sDataSample 4D 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_FlagUSD 36 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/default/production\ekg_sdcard.X.production.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\ekg_sdcard.X.production.o
+_BAUDCONbits FB8 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/default/production\ekg_sdcard.X.production.o
+_pack_samples FAA 0 CODE 0 text18 dist/default/production\ekg_sdcard.X.production.o
+__Hintcodelo 236 0 CODE 0 intcodelo dist/default/production\ekg_sdcard.X.production.o
+__end_of_SPI1_Write 1214 0 CODE 0 text13 dist/default/production\ekg_sdcard.X.production.o
+_SD_readSingleBlock E64 0 CODE 0 text11 dist/default/production\ekg_sdcard.X.production.o
+?_init_SDMMC 5F 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_INTCON FF2 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_Buffer_count2 2B 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/default/production\ekg_sdcard.X.production.o
+start_initialization 11A0 0 CODE 0 cinit dist/default/production\ekg_sdcard.X.production.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/default/production\ekg_sdcard.X.production.o
+_TRISCbits F94 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+___rparam_used 1 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+SD_readSingleBlock@i 63 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_Result 27 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_SPBRGH FB0 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__pcstackBANK0 80 0 BANK0 1 cstackBANK0 dist/default/production\ekg_sdcard.X.production.o
+_SSPBUF FC9 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+isa$xinst 0 0 ABS 0 - C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+SD_writeSingleBlock@response 62 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__end_of_SD_init A40 0 CODE 0 text8 dist/default/production\ekg_sdcard.X.production.o
+_write_event 38 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+SD_readSingleBlock@Buffer1 5E 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__end_of_pack_samples 1026 0 CODE 0 text18 dist/default/production\ekg_sdcard.X.production.o
+__Hbank0 0 0 ABS 0 bank0 dist/default/production\ekg_sdcard.X.production.o
+__Hbank1 0 0 ABS 0 bank1 dist/default/production\ekg_sdcard.X.production.o
+__Hbank2 0 0 ABS 0 bank2 dist/default/production\ekg_sdcard.X.production.o
+__Hbank3 0 0 ABS 0 bank3 dist/default/production\ekg_sdcard.X.production.o
+__Hbank4 0 0 ABS 0 bank4 dist/default/production\ekg_sdcard.X.production.o
+__Hbank5 0 0 ABS 0 bank5 dist/default/production\ekg_sdcard.X.production.o
+__Hcinit 0 0 ABS 0 cinit dist/default/production\ekg_sdcard.X.production.o
+__Hconst 0 0 CONST 0 const dist/default/production\ekg_sdcard.X.production.o
+__Hidata 0 0 CODE 0 idata dist/default/production\ekg_sdcard.X.production.o
+__Hidloc 200008 0 IDLOC 5 idloc dist/default/production\ekg_sdcard.X.production.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/default/production\ekg_sdcard.X.production.o
+__Hparam 0 0 COMRAM 1 rparam dist/default/production\ekg_sdcard.X.production.o
+__Hrdata 0 0 COMRAM 1 rdata dist/default/production\ekg_sdcard.X.production.o
+__Hstack 0 0 STACK 2 stack dist/default/production\ekg_sdcard.X.production.o
+__Htext0 0 0 ABS 0 text0 dist/default/production\ekg_sdcard.X.production.o
+__Htext1 0 0 ABS 0 text1 dist/default/production\ekg_sdcard.X.production.o
+__Htext2 0 0 ABS 0 text2 dist/default/production\ekg_sdcard.X.production.o
+__Htext3 0 0 ABS 0 text3 dist/default/production\ekg_sdcard.X.production.o
+__Htext4 0 0 ABS 0 text4 dist/default/production\ekg_sdcard.X.production.o
+__Htext5 0 0 ABS 0 text5 dist/default/production\ekg_sdcard.X.production.o
+__Htext6 0 0 ABS 0 text6 dist/default/production\ekg_sdcard.X.production.o
+__Htext7 0 0 ABS 0 text7 dist/default/production\ekg_sdcard.X.production.o
+__Htext8 0 0 ABS 0 text8 dist/default/production\ekg_sdcard.X.production.o
+__Htext9 0 0 ABS 0 text9 dist/default/production\ekg_sdcard.X.production.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\ekg_sdcard.X.production.o
+__Hbigram 0 0 ABS 0 bigram dist/default/production\ekg_sdcard.X.production.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\ekg_sdcard.X.production.o
+__smallconst 600 0 SMALLCONST 0 smallconst C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+_transmit 10E8 0 CODE 0 text2 dist/default/production\ekg_sdcard.X.production.o
+__Hcomram 0 0 ABS 0 comram dist/default/production\ekg_sdcard.X.production.o
+__Hconfig 30000E 0 CONFIG 4 config dist/default/production\ekg_sdcard.X.production.o
+__Lbank0 0 0 ABS 0 bank0 dist/default/production\ekg_sdcard.X.production.o
+__Lbank1 0 0 ABS 0 bank1 dist/default/production\ekg_sdcard.X.production.o
+__Lbank2 0 0 ABS 0 bank2 dist/default/production\ekg_sdcard.X.production.o
+__Lbank3 0 0 ABS 0 bank3 dist/default/production\ekg_sdcard.X.production.o
+__Lbank4 0 0 ABS 0 bank4 dist/default/production\ekg_sdcard.X.production.o
+__Lbank5 0 0 ABS 0 bank5 dist/default/production\ekg_sdcard.X.production.o
+__Lcinit 0 0 ABS 0 cinit dist/default/production\ekg_sdcard.X.production.o
+__Lconst 0 0 CONST 0 const dist/default/production\ekg_sdcard.X.production.o
+_SPI1_ReceiveWait 11F6 0 CODE 0 text15 dist/default/production\ekg_sdcard.X.production.o
+__Lidata 0 0 CODE 0 idata dist/default/production\ekg_sdcard.X.production.o
+__Lidloc 0 0 IDLOC 5 idloc dist/default/production\ekg_sdcard.X.production.o
+_Buffer_sel 29 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/default/production\ekg_sdcard.X.production.o
+__Lparam 0 0 COMRAM 1 rparam dist/default/production\ekg_sdcard.X.production.o
+__Lrdata 0 0 COMRAM 1 rdata dist/default/production\ekg_sdcard.X.production.o
+__Lstack 0 0 STACK 2 stack dist/default/production\ekg_sdcard.X.production.o
+__Ltext0 0 0 ABS 0 text0 dist/default/production\ekg_sdcard.X.production.o
+__Ltext1 0 0 ABS 0 text1 dist/default/production\ekg_sdcard.X.production.o
+__Ltext2 0 0 ABS 0 text2 dist/default/production\ekg_sdcard.X.production.o
+__Ltext3 0 0 ABS 0 text3 dist/default/production\ekg_sdcard.X.production.o
+__Ltext4 0 0 ABS 0 text4 dist/default/production\ekg_sdcard.X.production.o
+__Ltext5 0 0 ABS 0 text5 dist/default/production\ekg_sdcard.X.production.o
+__Ltext6 0 0 ABS 0 text6 dist/default/production\ekg_sdcard.X.production.o
+__Ltext7 0 0 ABS 0 text7 dist/default/production\ekg_sdcard.X.production.o
+__Ltext8 0 0 ABS 0 text8 dist/default/production\ekg_sdcard.X.production.o
+__Ltext9 0 0 ABS 0 text9 dist/default/production\ekg_sdcard.X.production.o
+__end_of_transmit 1134 0 CODE 0 text2 dist/default/production\ekg_sdcard.X.production.o
+init@ret 64 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/default/production\ekg_sdcard.X.production.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/default/production\ekg_sdcard.X.production.o
+_PORTBbits F81 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_INTCONbits FF2 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Habs1 0 0 ABS 0 abs1 dist/default/production\ekg_sdcard.X.production.o
+__Hdata 0 0 ABS 0 data dist/default/production\ekg_sdcard.X.production.o
+__Hheap 0 0 HEAP 7 heap dist/default/production\ekg_sdcard.X.production.o
+__Hinit 23A 0 CODE 0 init dist/default/production\ekg_sdcard.X.production.o
+__Hrbit 0 0 COMRAM 1 rbit dist/default/production\ekg_sdcard.X.production.o
+__Hrbss 0 0 COMRAM 1 rbss dist/default/production\ekg_sdcard.X.production.o
+__Htemp 6B 0 COMRAM 1 temp dist/default/production\ekg_sdcard.X.production.o
+__Htext 0 0 ABS 0 text dist/default/production\ekg_sdcard.X.production.o
+__Labs1 0 0 ABS 0 abs1 dist/default/production\ekg_sdcard.X.production.o
+__Ldata 0 0 ABS 0 data dist/default/production\ekg_sdcard.X.production.o
+__Lheap 0 0 HEAP 7 heap dist/default/production\ekg_sdcard.X.production.o
+__Linit 236 0 CODE 0 init dist/default/production\ekg_sdcard.X.production.o
+__Lrbit 0 0 COMRAM 1 rbit dist/default/production\ekg_sdcard.X.production.o
+__Lrbss 0 0 COMRAM 1 rbss dist/default/production\ekg_sdcard.X.production.o
+__Ltemp 6A 0 COMRAM 1 temp dist/default/production\ekg_sdcard.X.production.o
+__Ltext 0 0 ABS 0 text dist/default/production\ekg_sdcard.X.production.o
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\ekg_sdcard.X.production.o
+int$flags 6A 0 COMRAM 1 temp dist/default/production\ekg_sdcard.X.production.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Hintret 0 0 ABS 0 intret dist/default/production\ekg_sdcard.X.production.o
+__Hirdata 0 0 CODE 0 irdata dist/default/production\ekg_sdcard.X.production.o
+_ISR 18 0 CODE 0 intcodelo dist/default/production\ekg_sdcard.X.production.o
+__S0 1222 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__S1 488 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__S4 0 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__S5 0 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+SPI1_Write@dat 4D 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_cntTas 37 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_SDHC_flag 34 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_data_pack 1 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/default/production\ekg_sdcard.X.production.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/default/production\ekg_sdcard.X.production.o
+__end_of_writeBuffer BD4 0 CODE 0 text17 dist/default/production\ekg_sdcard.X.production.o
+__end_of_ISR 236 0 CODE 0 intcodelo dist/default/production\ekg_sdcard.X.production.o
+__Lintentry 0 0 ABS 0 intentry dist/default/production\ekg_sdcard.X.production.o
+__Hramtop 600 0 RAM 0 ramtop dist/default/production\ekg_sdcard.X.production.o
+__Hrparam 0 0 COMRAM 1 rparam dist/default/production\ekg_sdcard.X.production.o
+writeBuffer@Result 3E 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__activetblptr 0 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Hstruct 0 0 COMRAM 1 struct dist/default/production\ekg_sdcard.X.production.o
+__Htext10 0 0 ABS 0 text10 dist/default/production\ekg_sdcard.X.production.o
+__Htext11 0 0 ABS 0 text11 dist/default/production\ekg_sdcard.X.production.o
+__Htext12 0 0 ABS 0 text12 dist/default/production\ekg_sdcard.X.production.o
+__Htext13 0 0 ABS 0 text13 dist/default/production\ekg_sdcard.X.production.o
+__Htext14 0 0 ABS 0 text14 dist/default/production\ekg_sdcard.X.production.o
+__Htext15 0 0 ABS 0 text15 dist/default/production\ekg_sdcard.X.production.o
+__Htext17 0 0 ABS 0 text17 dist/default/production\ekg_sdcard.X.production.o
+__Htext18 0 0 ABS 0 text18 dist/default/production\ekg_sdcard.X.production.o
+SD_sendCommand@status1 57 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+transmit@i 4D 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_PIE1bits F9D 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+main@address 80 0 BANK0 1 cstackBANK0 dist/default/production\ekg_sdcard.X.production.o
+__ptext10 D56 0 CODE 0 text10 dist/default/production\ekg_sdcard.X.production.o
+__ptext11 E64 0 CODE 0 text11 dist/default/production\ekg_sdcard.X.production.o
+__ptext12 BD4 0 CODE 0 text12 dist/default/production\ekg_sdcard.X.production.o
+__ptext13 1206 0 CODE 0 text13 dist/default/production\ekg_sdcard.X.production.o
+__ptext14 1214 0 CODE 0 text14 dist/default/production\ekg_sdcard.X.production.o
+__ptext15 11F6 0 CODE 0 text15 dist/default/production\ekg_sdcard.X.production.o
+__ptext17 A40 0 CODE 0 text17 dist/default/production\ekg_sdcard.X.production.o
+__ptext18 FAA 0 CODE 0 text18 dist/default/production\ekg_sdcard.X.production.o
+__end_of_SPI1_ReceiveWait 1206 0 CODE 0 text15 dist/default/production\ekg_sdcard.X.production.o
+pack@Sample 4D 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/default/production\ekg_sdcard.X.production.o
+__Lbigram 0 0 ABS 0 bigram dist/default/production\ekg_sdcard.X.production.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/default/production\ekg_sdcard.X.production.o
+__Lcomram 0 0 ABS 0 comram dist/default/production\ekg_sdcard.X.production.o
+__Lconfig 0 0 CONFIG 4 config dist/default/production\ekg_sdcard.X.production.o
+_FlagTransmit 35 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Lsivt_hi 0 0 ABS 0 sivt_hi dist/default/production\ekg_sdcard.X.production.o
+__Lsivt_lo 0 0 ABS 0 sivt_lo dist/default/production\ekg_sdcard.X.production.o
+_read_event 39 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/default/production\ekg_sdcard.X.production.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+__Lfardata 0 0 FARRAM 0 fardata dist/default/production\ekg_sdcard.X.production.o
+isa$std 1 0 ABS 0 - C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+__end_of_SPI1_Init 11F6 0 CODE 0 text7 dist/default/production\ekg_sdcard.X.production.o
+__end_of_SPI1_Read 1222 0 CODE 0 text14 dist/default/production\ekg_sdcard.X.production.o
+stackhi 0 0 ABS 0 - C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+_SD_sendCommand BD4 0 CODE 0 text12 dist/default/production\ekg_sdcard.X.production.o
+__Lintcode 4 0 CODE 0 intcode dist/default/production\ekg_sdcard.X.production.o
+__Lintret 0 0 ABS 0 intret dist/default/production\ekg_sdcard.X.production.o
+__Lirdata 0 0 CODE 0 irdata dist/default/production\ekg_sdcard.X.production.o
+_ADCON0bits FC2 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__pbssBIGRAM 88 0 BIGRAM 1 bssBIGRAM dist/default/production\ekg_sdcard.X.production.o
+__Lspace_0 0 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Lspace_1 0 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Lspace_2 0 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Lspace_4 0 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 dist/default/production\ekg_sdcard.X.production.o
+_PIR1bits F9E 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+end_of_initialization 11C0 0 CODE 0 cinit dist/default/production\ekg_sdcard.X.production.o
+_SPI1_Init 11E6 0 CODE 0 text7 dist/default/production\ekg_sdcard.X.production.o
+_SPI1_Read 1214 0 CODE 0 text14 dist/default/production\ekg_sdcard.X.production.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/default/production\ekg_sdcard.X.production.o
+__Hintentry 0 0 ABS 0 intentry dist/default/production\ekg_sdcard.X.production.o
+_unpack_samples F1A 0 CODE 0 text1 dist/default/production\ekg_sdcard.X.production.o
+__Hreset_vec 4 0 CODE 0 reset_vec dist/default/production\ekg_sdcard.X.production.o
+SD_init@retry 5D 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_SD_init 88A 0 CODE 0 text8 dist/default/production\ekg_sdcard.X.production.o
+__Lramtop 600 0 RAM 0 ramtop dist/default/production\ekg_sdcard.X.production.o
+__end_of_UART_Init 11E6 0 CODE 0 text9 dist/default/production\ekg_sdcard.X.production.o
+__Lrparam 0 0 COMRAM 1 rparam dist/default/production\ekg_sdcard.X.production.o
+__pcinit 11A0 0 CODE 0 cinit dist/default/production\ekg_sdcard.X.production.o
+_cardType 33 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__ptext0 602 0 CODE 0 text0 dist/default/production\ekg_sdcard.X.production.o
+__ptext1 F1A 0 CODE 0 text1 dist/default/production\ekg_sdcard.X.production.o
+__ptext2 10E8 0 CODE 0 text2 dist/default/production\ekg_sdcard.X.production.o
+__ptext3 1026 0 CODE 0 text3 dist/default/production\ekg_sdcard.X.production.o
+__ptext4 116E 0 CODE 0 text4 dist/default/production\ekg_sdcard.X.production.o
+__ptext5 1088 0 CODE 0 text5 dist/default/production\ekg_sdcard.X.production.o
+__ptext6 1134 0 CODE 0 text6 dist/default/production\ekg_sdcard.X.production.o
+__ptext7 11E6 0 CODE 0 text7 dist/default/production\ekg_sdcard.X.production.o
+__ptext8 88A 0 CODE 0 text8 dist/default/production\ekg_sdcard.X.production.o
+__ptext9 11CA 0 CODE 0 text9 dist/default/production\ekg_sdcard.X.production.o
+__Lstruct 0 0 COMRAM 1 struct dist/default/production\ekg_sdcard.X.production.o
+SD_readSingleBlock@startBlock 5A 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Ltext10 0 0 ABS 0 text10 dist/default/production\ekg_sdcard.X.production.o
+__Ltext11 0 0 ABS 0 text11 dist/default/production\ekg_sdcard.X.production.o
+__Ltext12 0 0 ABS 0 text12 dist/default/production\ekg_sdcard.X.production.o
+__Ltext13 0 0 ABS 0 text13 dist/default/production\ekg_sdcard.X.production.o
+__Ltext14 0 0 ABS 0 text14 dist/default/production\ekg_sdcard.X.production.o
+__Ltext15 0 0 ABS 0 text15 dist/default/production\ekg_sdcard.X.production.o
+__Ltext17 0 0 ABS 0 text17 dist/default/production\ekg_sdcard.X.production.o
+__Ltext18 0 0 ABS 0 text18 dist/default/production\ekg_sdcard.X.production.o
+__ramtop 600 0 RAM 0 ramtop C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+_init_SDMMC 1134 0 CODE 0 text6 dist/default/production\ekg_sdcard.X.production.o
+__Lpowerup 236 0 CODE 0 powerup dist/default/production\ekg_sdcard.X.production.o
+__end_of_SD_sendCommand D56 0 CODE 0 text12 dist/default/production\ekg_sdcard.X.production.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/default/production\ekg_sdcard.X.production.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/default/production\ekg_sdcard.X.production.o
+__psmallconst 600 0 SMALLCONST 0 smallconst dist/default/production\ekg_sdcard.X.production.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/default/production\ekg_sdcard.X.production.o
+_UART_Init 11CA 0 CODE 0 text9 dist/default/production\ekg_sdcard.X.production.o
+___heap_hi 0 0 ABS 0 - C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+___param_bank 0 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\LIMEMI~1\AppData\Local\Temp\xcAsrk8.\driver_tmp_9.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\ekg_sdcard.X.production.o
+__end_of__initialization 11C0 0 CODE 0 cinit dist/default/production\ekg_sdcard.X.production.o
+_INTCON2 FF1 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Libigdata 0 0 CODE 0 ibigdata dist/default/production\ekg_sdcard.X.production.o
+_ADC_sample 15 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_Buffer_count 2D 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__end_of_unpack_samples FAA 0 CODE 0 text1 dist/default/production\ekg_sdcard.X.production.o
+init_SDMMC@ret 62 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext dist/default/production\ekg_sdcard.X.production.o
+_SD_writeSingleBlock D56 0 CODE 0 text10 dist/default/production\ekg_sdcard.X.production.o
+__pintcodelo 18 0 CODE 0 intcodelo dist/default/production\ekg_sdcard.X.production.o
+_startBlock 1F 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__pcstackCOMRAM 3B 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_TXSTAbits FAC 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_SSPCON1 FC6 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_SSPSTAT FC7 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+SD_writeSingleBlock@i 63 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__end_of_init 10E8 0 CODE 0 text5 dist/default/production\ekg_sdcard.X.production.o
+__end_of_main 88A 0 CODE 0 text0 dist/default/production\ekg_sdcard.X.production.o
+__end_of_pack 1088 0 CODE 0 text3 dist/default/production\ekg_sdcard.X.production.o
+_ByteX 23 0 COMRAM 1 bssCOMRAM dist/default/production\ekg_sdcard.X.production.o
+_PORTA F80 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_PORTB F81 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_PORTC F82 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_RCSTA FAB 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_SPBRG FAF 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_T0CON FD5 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_TMR0H FD7 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_TMR0L FD6 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_TRISA F92 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_TRISB F93 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_TRISC F94 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+_TXREG FAD 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__HRAM 0 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Hbss 0 0 RAM 1 bss dist/default/production\ekg_sdcard.X.production.o
+__Hram 0 0 ABS 0 ram dist/default/production\ekg_sdcard.X.production.o
+__Hsfr 0 0 ABS 0 sfr dist/default/production\ekg_sdcard.X.production.o
+__LRAM 1 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Lbss 0 0 RAM 1 bss dist/default/production\ekg_sdcard.X.production.o
+__Lram 0 0 ABS 0 ram dist/default/production\ekg_sdcard.X.production.o
+__Lsfr 0 0 ABS 0 sfr dist/default/production\ekg_sdcard.X.production.o
+__end_of_init_SDMMC 116E 0 CODE 0 text6 dist/default/production\ekg_sdcard.X.production.o
+_SSPSTATbits FC7 0 ABS 0 - dist/default/production\ekg_sdcard.X.production.o
+__Hsivt_hi 0 0 ABS 0 sivt_hi dist/default/production\ekg_sdcard.X.production.o
+__Hsivt_lo 0 0 ABS 0 sivt_lo dist/default/production\ekg_sdcard.X.production.o
+__initialization 11A0 0 CODE 0 cinit dist/default/production\ekg_sdcard.X.production.o
+SD_init@response 5C 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+SD_init@SD_version 5A 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Hfardata 0 0 FARRAM 0 fardata dist/default/production\ekg_sdcard.X.production.o
+main@startBlock 84 0 BANK0 1 cstackBANK0 dist/default/production\ekg_sdcard.X.production.o
+__Hsmallconst 602 0 SMALLCONST 0 smallconst dist/default/production\ekg_sdcard.X.production.o
+__Lifardata 0 0 CODE 0 ifardata dist/default/production\ekg_sdcard.X.production.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/default/production\ekg_sdcard.X.production.o
+SD_readSingleBlock@retry 60 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+__Hintcode 4 0 CODE 0 intcode dist/default/production\ekg_sdcard.X.production.o
+SD_readSingleBlock@response 62 0 COMRAM 1 cstackCOMRAM dist/default/production\ekg_sdcard.X.production.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+intcodelo 0 18 18 222 1
+text0 0 602 602 C20 1
+cstackBANK0 1 80 80 8 1
+reset_vec 0 0 0 4 1
+smallconst 0 600 600 2 1
+bssBIGRAM 1 88 88 400 1
+bssCOMRAM 1 1 1 6A 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

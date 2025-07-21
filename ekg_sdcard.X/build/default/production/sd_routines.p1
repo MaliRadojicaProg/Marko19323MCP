@@ -1,0 +1,1281 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"37 ././spi.h
+[; ;././spi.h: 37: void SPI1_Write(unsigned char dat);
+[v _SPI1_Write `(v ~T0 @X0 0 ef1`uc ]
+"450 F:\Program Files\Microchip\xc8\v2.50\pic\include\proc/pic18f2520.h
+[v _PORTC `Vuc ~T0 @X0 0 e@3970 ]
+"35 ././sd_routines.h
+[; ;././sd_routines.h: 35: unsigned char SD_sendCommand(unsigned char cmd, unsigned long arg);
+[v _SD_sendCommand `(uc ~T0 @X0 0 ef2`uc`ul ]
+"36 ././spi.h
+[; ;././spi.h: 36: unsigned char SPI1_Read(unsigned char d);
+[v _SPI1_Read `(uc ~T0 @X0 0 ef1`uc ]
+"54 F:\Program Files\Microchip\xc8\v2.50\pic\include\proc/pic18f2520.h
+[; <" PORTA equ 0F80h ;# ">
+"273
+[; <" PORTB equ 0F81h ;# ">
+"452
+[; <" PORTC equ 0F82h ;# ">
+"627
+[; <" PORTE equ 0F84h ;# ">
+"702
+[; <" LATA equ 0F89h ;# ">
+"814
+[; <" LATB equ 0F8Ah ;# ">
+"926
+[; <" LATC equ 0F8Bh ;# ">
+"1038
+[; <" TRISA equ 0F92h ;# ">
+"1043
+[; <" DDRA equ 0F92h ;# ">
+"1260
+[; <" TRISB equ 0F93h ;# ">
+"1265
+[; <" DDRB equ 0F93h ;# ">
+"1482
+[; <" TRISC equ 0F94h ;# ">
+"1487
+[; <" DDRC equ 0F94h ;# ">
+"1704
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"1769
+[; <" PIE1 equ 0F9Dh ;# ">
+"1840
+[; <" PIR1 equ 0F9Eh ;# ">
+"1911
+[; <" IPR1 equ 0F9Fh ;# ">
+"1982
+[; <" PIE2 equ 0FA0h ;# ">
+"2048
+[; <" PIR2 equ 0FA1h ;# ">
+"2114
+[; <" IPR2 equ 0FA2h ;# ">
+"2180
+[; <" EECON1 equ 0FA6h ;# ">
+"2246
+[; <" EECON2 equ 0FA7h ;# ">
+"2253
+[; <" EEDATA equ 0FA8h ;# ">
+"2260
+[; <" EEADR equ 0FA9h ;# ">
+"2267
+[; <" RCSTA equ 0FABh ;# ">
+"2272
+[; <" RCSTA1 equ 0FABh ;# ">
+"2477
+[; <" TXSTA equ 0FACh ;# ">
+"2482
+[; <" TXSTA1 equ 0FACh ;# ">
+"2733
+[; <" TXREG equ 0FADh ;# ">
+"2738
+[; <" TXREG1 equ 0FADh ;# ">
+"2745
+[; <" RCREG equ 0FAEh ;# ">
+"2750
+[; <" RCREG1 equ 0FAEh ;# ">
+"2757
+[; <" SPBRG equ 0FAFh ;# ">
+"2762
+[; <" SPBRG1 equ 0FAFh ;# ">
+"2769
+[; <" SPBRGH equ 0FB0h ;# ">
+"2776
+[; <" T3CON equ 0FB1h ;# ">
+"2888
+[; <" TMR3 equ 0FB2h ;# ">
+"2895
+[; <" TMR3L equ 0FB2h ;# ">
+"2902
+[; <" TMR3H equ 0FB3h ;# ">
+"2909
+[; <" CMCON equ 0FB4h ;# ">
+"2999
+[; <" CVRCON equ 0FB5h ;# ">
+"3078
+[; <" ECCP1AS equ 0FB6h ;# ">
+"3083
+[; <" ECCPAS equ 0FB6h ;# ">
+"3208
+[; <" PWM1CON equ 0FB7h ;# ">
+"3213
+[; <" ECCP1DEL equ 0FB7h ;# ">
+"3248
+[; <" BAUDCON equ 0FB8h ;# ">
+"3253
+[; <" BAUDCTL equ 0FB8h ;# ">
+"3428
+[; <" CCP2CON equ 0FBAh ;# ">
+"3507
+[; <" CCPR2 equ 0FBBh ;# ">
+"3514
+[; <" CCPR2L equ 0FBBh ;# ">
+"3521
+[; <" CCPR2H equ 0FBCh ;# ">
+"3528
+[; <" CCP1CON equ 0FBDh ;# ">
+"3607
+[; <" CCPR1 equ 0FBEh ;# ">
+"3614
+[; <" CCPR1L equ 0FBEh ;# ">
+"3621
+[; <" CCPR1H equ 0FBFh ;# ">
+"3628
+[; <" ADCON2 equ 0FC0h ;# ">
+"3699
+[; <" ADCON1 equ 0FC1h ;# ">
+"3784
+[; <" ADCON0 equ 0FC2h ;# ">
+"3903
+[; <" ADRES equ 0FC3h ;# ">
+"3910
+[; <" ADRESL equ 0FC3h ;# ">
+"3917
+[; <" ADRESH equ 0FC4h ;# ">
+"3924
+[; <" SSPCON2 equ 0FC5h ;# ">
+"4019
+[; <" SSPCON1 equ 0FC6h ;# ">
+"4089
+[; <" SSPSTAT equ 0FC7h ;# ">
+"4310
+[; <" SSPADD equ 0FC8h ;# ">
+"4317
+[; <" SSPBUF equ 0FC9h ;# ">
+"4324
+[; <" T2CON equ 0FCAh ;# ">
+"4422
+[; <" PR2 equ 0FCBh ;# ">
+"4427
+[; <" MEMCON equ 0FCBh ;# ">
+"4532
+[; <" TMR2 equ 0FCCh ;# ">
+"4539
+[; <" T1CON equ 0FCDh ;# ">
+"4642
+[; <" TMR1 equ 0FCEh ;# ">
+"4649
+[; <" TMR1L equ 0FCEh ;# ">
+"4656
+[; <" TMR1H equ 0FCFh ;# ">
+"4663
+[; <" RCON equ 0FD0h ;# ">
+"4796
+[; <" WDTCON equ 0FD1h ;# ">
+"4824
+[; <" HLVDCON equ 0FD2h ;# ">
+"4829
+[; <" LVDCON equ 0FD2h ;# ">
+"5094
+[; <" OSCCON equ 0FD3h ;# ">
+"5177
+[; <" T0CON equ 0FD5h ;# ">
+"5260
+[; <" TMR0 equ 0FD6h ;# ">
+"5267
+[; <" TMR0L equ 0FD6h ;# ">
+"5274
+[; <" TMR0H equ 0FD7h ;# ">
+"5281
+[; <" STATUS equ 0FD8h ;# ">
+"5352
+[; <" FSR2 equ 0FD9h ;# ">
+"5359
+[; <" FSR2L equ 0FD9h ;# ">
+"5366
+[; <" FSR2H equ 0FDAh ;# ">
+"5373
+[; <" PLUSW2 equ 0FDBh ;# ">
+"5380
+[; <" PREINC2 equ 0FDCh ;# ">
+"5387
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"5394
+[; <" POSTINC2 equ 0FDEh ;# ">
+"5401
+[; <" INDF2 equ 0FDFh ;# ">
+"5408
+[; <" BSR equ 0FE0h ;# ">
+"5415
+[; <" FSR1 equ 0FE1h ;# ">
+"5422
+[; <" FSR1L equ 0FE1h ;# ">
+"5429
+[; <" FSR1H equ 0FE2h ;# ">
+"5436
+[; <" PLUSW1 equ 0FE3h ;# ">
+"5443
+[; <" PREINC1 equ 0FE4h ;# ">
+"5450
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"5457
+[; <" POSTINC1 equ 0FE6h ;# ">
+"5464
+[; <" INDF1 equ 0FE7h ;# ">
+"5471
+[; <" WREG equ 0FE8h ;# ">
+"5483
+[; <" FSR0 equ 0FE9h ;# ">
+"5490
+[; <" FSR0L equ 0FE9h ;# ">
+"5497
+[; <" FSR0H equ 0FEAh ;# ">
+"5504
+[; <" PLUSW0 equ 0FEBh ;# ">
+"5511
+[; <" PREINC0 equ 0FECh ;# ">
+"5518
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"5525
+[; <" POSTINC0 equ 0FEEh ;# ">
+"5532
+[; <" INDF0 equ 0FEFh ;# ">
+"5539
+[; <" INTCON3 equ 0FF0h ;# ">
+"5631
+[; <" INTCON2 equ 0FF1h ;# ">
+"5701
+[; <" INTCON equ 0FF2h ;# ">
+"5818
+[; <" PROD equ 0FF3h ;# ">
+"5825
+[; <" PRODL equ 0FF3h ;# ">
+"5832
+[; <" PRODH equ 0FF4h ;# ">
+"5839
+[; <" TABLAT equ 0FF5h ;# ">
+"5848
+[; <" TBLPTR equ 0FF6h ;# ">
+"5855
+[; <" TBLPTRL equ 0FF6h ;# ">
+"5862
+[; <" TBLPTRH equ 0FF7h ;# ">
+"5869
+[; <" TBLPTRU equ 0FF8h ;# ">
+"5878
+[; <" PCLAT equ 0FF9h ;# ">
+"5885
+[; <" PC equ 0FF9h ;# ">
+"5892
+[; <" PCL equ 0FF9h ;# ">
+"5899
+[; <" PCLATH equ 0FFAh ;# ">
+"5906
+[; <" PCLATU equ 0FFBh ;# ">
+"5913
+[; <" STKPTR equ 0FFCh ;# ">
+"5987
+[; <" TOS equ 0FFDh ;# ">
+"5994
+[; <" TOSL equ 0FFDh ;# ">
+"6001
+[; <" TOSH equ 0FFEh ;# ">
+"6008
+[; <" TOSU equ 0FFFh ;# ">
+"13 sd_routines.c
+[; ;sd_routines.c: 13: volatile unsigned long startBlock, totalBlocks;
+[v _startBlock `Vul ~T0 @X0 1 e ]
+[v _totalBlocks `Vul ~T0 @X0 1 e ]
+"14
+[; ;sd_routines.c: 14: volatile unsigned char SDHC_flag, cardType;
+[v _SDHC_flag `Vuc ~T0 @X0 1 e ]
+[v _cardType `Vuc ~T0 @X0 1 e ]
+"16
+[; ;sd_routines.c: 16: unsigned char SD_init(void) {
+[v _SD_init `(uc ~T0 @X0 1 ef ]
+{
+[e :U _SD_init ]
+[f ]
+"17
+[; ;sd_routines.c: 17:     unsigned char i, response, SD_version;
+[v _i `uc ~T0 @X0 1 a ]
+[v _response `uc ~T0 @X0 1 a ]
+[v _SD_version `uc ~T0 @X0 1 a ]
+"18
+[; ;sd_routines.c: 18:     unsigned int retry = 0;
+[v _retry `ui ~T0 @X0 1 a ]
+[e = _retry -> -> 0 `i `ui ]
+"22
+[; ;sd_routines.c: 22:     for (i = 0; i < 20; i++)
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 20 `i 254  ]
+[e $U 255  ]
+[e :U 254 ]
+"23
+[; ;sd_routines.c: 23:         SPI1_Write(0xFF);
+[e ( _SPI1_Write (1 -> -> 255 `i `uc ]
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 20 `i 254  ]
+[e :U 255 ]
+}
+"27
+[; ;sd_routines.c: 27:     PORTC &= 0xFE;
+[e =& _PORTC -> -> 254 `i `Vuc ]
+"29
+[; ;sd_routines.c: 29:     do {
+[e :U 259 ]
+{
+"30
+[; ;sd_routines.c: 30:         response = SD_sendCommand(0, 0);
+[e = _response ( _SD_sendCommand (2 , -> -> 0 `i `uc -> -> -> 0 `i `l `ul ]
+"31
+[; ;sd_routines.c: 31:         retry++;
+[e ++ _retry -> -> 1 `i `ui ]
+"32
+[; ;sd_routines.c: 32:         if (retry > 0xFE) return 1;
+[e $ ! > _retry -> -> 254 `i `ui 260  ]
+[e ) -> -> 1 `i `uc ]
+[e $UE 253  ]
+[e :U 260 ]
+"33
+[; ;sd_routines.c: 33:     } while (response != 0x01);
+}
+[e $ != -> _response `i -> 1 `i 259  ]
+[e :U 258 ]
+"35
+[; ;sd_routines.c: 35:     PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"36
+[; ;sd_routines.c: 36:     SPI1_Write(0xFF);
+[e ( _SPI1_Write (1 -> -> 255 `i `uc ]
+"37
+[; ;sd_routines.c: 37:     SPI1_Write(0xFF);
+[e ( _SPI1_Write (1 -> -> 255 `i `uc ]
+"38
+[; ;sd_routines.c: 38:     retry = 0;
+[e = _retry -> -> 0 `i `ui ]
+"42
+[; ;sd_routines.c: 42:     SD_version = 2;
+[e = _SD_version -> -> 2 `i `uc ]
+"45
+[; ;sd_routines.c: 45:     do {
+[e :U 263 ]
+{
+"46
+[; ;sd_routines.c: 46:         response = SD_sendCommand(8, 0x000001AA);
+[e = _response ( _SD_sendCommand (2 , -> -> 8 `i `uc -> -> -> 426 `i `l `ul ]
+"48
+[; ;sd_routines.c: 48:         retry++;
+[e ++ _retry -> -> 1 `i `ui ]
+"49
+[; ;sd_routines.c: 49:         if (retry > 0xfe) {
+[e $ ! > _retry -> -> 254 `i `ui 264  ]
+{
+"51
+[; ;sd_routines.c: 51:             SD_version = 1;
+[e = _SD_version -> -> 1 `i `uc ]
+"52
+[; ;sd_routines.c: 52:             cardType = 1;
+[e = _cardType -> -> 1 `i `uc ]
+"54
+[; ;sd_routines.c: 54:             break;
+[e $U 262  ]
+"55
+[; ;sd_routines.c: 55:         }
+}
+[e :U 264 ]
+"56
+[; ;sd_routines.c: 56:     } while (response != 0x01);
+}
+[e $ != -> _response `i -> 1 `i 263  ]
+[e :U 262 ]
+"58
+[; ;sd_routines.c: 58:     retry = 0;
+[e = _retry -> -> 0 `i `ui ]
+"61
+[; ;sd_routines.c: 61:     do {
+[e :U 267 ]
+{
+"62
+[; ;sd_routines.c: 62:         response = SD_sendCommand(55, 0);
+[e = _response ( _SD_sendCommand (2 , -> -> 55 `i `uc -> -> -> 0 `i `l `ul ]
+"63
+[; ;sd_routines.c: 63:         response = SD_sendCommand(41, 0x40000000);
+[e = _response ( _SD_sendCommand (2 , -> -> 41 `i `uc -> -> 1073741824 `l `ul ]
+"64
+[; ;sd_routines.c: 64:         retry++;
+[e ++ _retry -> -> 1 `i `ui ]
+"65
+[; ;sd_routines.c: 65:         if (retry > 0x4fe) {
+[e $ ! > _retry -> -> 1278 `i `ui 268  ]
+{
+"67
+[; ;sd_routines.c: 67:             return 2;
+[e ) -> -> 2 `i `uc ]
+[e $UE 253  ]
+"68
+[; ;sd_routines.c: 68:         }
+}
+[e :U 268 ]
+"69
+[; ;sd_routines.c: 69:     } while (response != 0x00);
+}
+[e $ != -> _response `i -> 0 `i 267  ]
+[e :U 266 ]
+"71
+[; ;sd_routines.c: 71:     retry = 0;
+[e = _retry -> -> 0 `i `ui ]
+"72
+[; ;sd_routines.c: 72:     SDHC_flag = 0;
+[e = _SDHC_flag -> -> 0 `i `uc ]
+"75
+[; ;sd_routines.c: 75:     if (SD_version == 2) {
+[e $ ! == -> _SD_version `i -> 2 `i 269  ]
+{
+"76
+[; ;sd_routines.c: 76:         do {
+[e :U 272 ]
+{
+"77
+[; ;sd_routines.c: 77:             response = SD_sendCommand(58, 0);
+[e = _response ( _SD_sendCommand (2 , -> -> 58 `i `uc -> -> -> 0 `i `l `ul ]
+"78
+[; ;sd_routines.c: 78:             retry++;
+[e ++ _retry -> -> 1 `i `ui ]
+"79
+[; ;sd_routines.c: 79:             if (retry > 0xfe) {
+[e $ ! > _retry -> -> 254 `i `ui 273  ]
+{
+"81
+[; ;sd_routines.c: 81:                 cardType = 0;
+[e = _cardType -> -> 0 `i `uc ]
+"82
+[; ;sd_routines.c: 82:                 break;
+[e $U 271  ]
+"83
+[; ;sd_routines.c: 83:             }
+}
+[e :U 273 ]
+"84
+[; ;sd_routines.c: 84:         } while (response != 0x00);
+}
+[e $ != -> _response `i -> 0 `i 272  ]
+[e :U 271 ]
+"86
+[; ;sd_routines.c: 86:         if (SDHC_flag == 1) cardType = 2;
+[e $ ! == -> _SDHC_flag `i -> 1 `i 274  ]
+[e = _cardType -> -> 2 `i `uc ]
+[e $U 275  ]
+"87
+[; ;sd_routines.c: 87:         else cardType = 3;
+[e :U 274 ]
+[e = _cardType -> -> 3 `i `uc ]
+[e :U 275 ]
+"88
+[; ;sd_routines.c: 88:     }
+}
+[e :U 269 ]
+"92
+[; ;sd_routines.c: 92:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 253  ]
+"93
+[; ;sd_routines.c: 93: }
+[e :UE 253 ]
+}
+"102
+[; ;sd_routines.c: 102: unsigned char SD_sendCommand(unsigned char cmd, unsigned long arg) {
+[v _SD_sendCommand `(uc ~T0 @X0 1 ef2`uc`ul ]
+{
+[e :U _SD_sendCommand ]
+[v _cmd `uc ~T0 @X0 1 r1 ]
+[v _arg `ul ~T0 @X0 1 r2 ]
+[f ]
+"103
+[; ;sd_routines.c: 103:     unsigned char response, retry, status1;
+[v _response `uc ~T0 @X0 1 a ]
+[v _retry `uc ~T0 @X0 1 a ]
+[v _status1 `uc ~T0 @X0 1 a ]
+"104
+[; ;sd_routines.c: 104:     retry = 0;
+[e = _retry -> -> 0 `i `uc ]
+"111
+[; ;sd_routines.c: 111:     if (SDHC_flag == 0)
+[e $ ! == -> _SDHC_flag `i -> 0 `i 277  ]
+"112
+[; ;sd_routines.c: 112:         if ((cmd == 17) ||
+[e $ ! || || || || || == -> _cmd `i -> 17 `i == -> _cmd `i -> 18 `i == -> _cmd `i -> 24 `i == -> _cmd `i -> 25 `i == -> _cmd `i -> 32 `i == -> _cmd `i -> 33 `i 278  ]
+"117
+[; ;sd_routines.c: 117:                 (cmd == 33)) {
+{
+"118
+[; ;sd_routines.c: 118:             arg = (arg << 9);
+[e = _arg << _arg -> 9 `i ]
+"119
+[; ;sd_routines.c: 119:         }
+}
+[e :U 278 ]
+[e :U 277 ]
+"120
+[; ;sd_routines.c: 120:     PORTC &= 0xFE;
+[e =& _PORTC -> -> 254 `i `Vuc ]
+"122
+[; ;sd_routines.c: 122:     SPI1_Write(cmd | 0x40);
+[e ( _SPI1_Write (1 -> | -> _cmd `i -> 64 `i `uc ]
+"123
+[; ;sd_routines.c: 123:     SPI1_Write(arg >> 24);
+[e ( _SPI1_Write (1 -> >> _arg -> 24 `i `uc ]
+"124
+[; ;sd_routines.c: 124:     SPI1_Write(arg >> 16);
+[e ( _SPI1_Write (1 -> >> _arg -> 16 `i `uc ]
+"125
+[; ;sd_routines.c: 125:     SPI1_Write(arg >> 8);
+[e ( _SPI1_Write (1 -> >> _arg -> 8 `i `uc ]
+"126
+[; ;sd_routines.c: 126:     SPI1_Write(arg);
+[e ( _SPI1_Write (1 -> _arg `uc ]
+"128
+[; ;sd_routines.c: 128:     if (cmd == 8)
+[e $ ! == -> _cmd `i -> 8 `i 279  ]
+"129
+[; ;sd_routines.c: 129:         SPI1_Write(0x87);
+[e ( _SPI1_Write (1 -> -> 135 `i `uc ]
+[e $U 280  ]
+"130
+[; ;sd_routines.c: 130:     else
+[e :U 279 ]
+"131
+[; ;sd_routines.c: 131:         SPI1_Write(0x95);
+[e ( _SPI1_Write (1 -> -> 149 `i `uc ]
+[e :U 280 ]
+"133
+[; ;sd_routines.c: 133:     while ((response = SPI1_Read(0xFF)) == 0xFF)
+[e $U 281  ]
+[e :U 282 ]
+"134
+[; ;sd_routines.c: 134:         if (retry++ > 0xfe) break;
+[e $ ! > -> ++ _retry -> -> 1 `i `uc `i -> 254 `i 284  ]
+[e $U 283  ]
+[e :U 284 ]
+[e :U 281 ]
+"133
+[; ;sd_routines.c: 133:     while ((response = SPI1_Read(0xFF)) == 0xFF)
+[e $ == -> = _response ( _SPI1_Read (1 -> -> 255 `i `uc `i -> 255 `i 282  ]
+[e :U 283 ]
+"136
+[; ;sd_routines.c: 136:     if ((response == 0x00) && (cmd == 58))
+[e $ ! && == -> _response `i -> 0 `i == -> _cmd `i -> 58 `i 285  ]
+"137
+[; ;sd_routines.c: 137:     {
+{
+"138
+[; ;sd_routines.c: 138:         status1 = (SPI1_Read(0xFF) & 0x40);
+[e = _status1 -> & -> ( _SPI1_Read (1 -> -> 255 `i `uc `i -> 64 `i `uc ]
+"139
+[; ;sd_routines.c: 139:         if (status1 == 0x40) SDHC_flag = 1;
+[e $ ! == -> _status1 `i -> 64 `i 286  ]
+[e = _SDHC_flag -> -> 1 `i `uc ]
+[e $U 287  ]
+"140
+[; ;sd_routines.c: 140:         else SDHC_flag = 0;
+[e :U 286 ]
+[e = _SDHC_flag -> -> 0 `i `uc ]
+[e :U 287 ]
+"142
+[; ;sd_routines.c: 142:         SPI1_Read(0xFF);
+[e ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"143
+[; ;sd_routines.c: 143:         SPI1_Read(0xFF);
+[e ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"144
+[; ;sd_routines.c: 144:         SPI1_Read(0xFF);
+[e ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"145
+[; ;sd_routines.c: 145:     }
+}
+[e :U 285 ]
+"147
+[; ;sd_routines.c: 147:     SPI1_Read(0xFF);
+[e ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"148
+[; ;sd_routines.c: 148:     PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"150
+[; ;sd_routines.c: 150:     return response;
+[e ) _response ]
+[e $UE 276  ]
+"151
+[; ;sd_routines.c: 151: }
+[e :UE 276 ]
+}
+"160
+[; ;sd_routines.c: 160: unsigned char SD_erase(unsigned long startBlock, unsigned long totalBlocks) {
+[v _SD_erase `(uc ~T0 @X0 1 ef2`ul`ul ]
+{
+[e :U _SD_erase ]
+[v _startBlock `ul ~T0 @X0 1 r1 ]
+[v _totalBlocks `ul ~T0 @X0 1 r2 ]
+[f ]
+"161
+[; ;sd_routines.c: 161:     unsigned char response;
+[v _response `uc ~T0 @X0 1 a ]
+"163
+[; ;sd_routines.c: 163:     response = SD_sendCommand(32, startBlock);
+[e = _response ( _SD_sendCommand (2 , -> -> 32 `i `uc _startBlock ]
+"165
+[; ;sd_routines.c: 165:     if (response != 0x00)
+[e $ ! != -> _response `i -> 0 `i 289  ]
+"166
+[; ;sd_routines.c: 166:         return response;
+[e ) _response ]
+[e $UE 288  ]
+[e :U 289 ]
+"168
+[; ;sd_routines.c: 168:     response = SD_sendCommand(33, (startBlock + totalBlocks - 1));
+[e = _response ( _SD_sendCommand (2 , -> -> 33 `i `uc - + _startBlock _totalBlocks -> -> -> 1 `i `l `ul ]
+"170
+[; ;sd_routines.c: 170:     if (response != 0x00)
+[e $ ! != -> _response `i -> 0 `i 290  ]
+"171
+[; ;sd_routines.c: 171:         return response;
+[e ) _response ]
+[e $UE 288  ]
+[e :U 290 ]
+"173
+[; ;sd_routines.c: 173:     response = SD_sendCommand(38, 0);
+[e = _response ( _SD_sendCommand (2 , -> -> 38 `i `uc -> -> -> 0 `i `l `ul ]
+"175
+[; ;sd_routines.c: 175:     if (response != 0x00)
+[e $ ! != -> _response `i -> 0 `i 291  ]
+"176
+[; ;sd_routines.c: 176:         return response;
+[e ) _response ]
+[e $UE 288  ]
+[e :U 291 ]
+"178
+[; ;sd_routines.c: 178:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 288  ]
+"179
+[; ;sd_routines.c: 179: }
+[e :UE 288 ]
+}
+"188
+[; ;sd_routines.c: 188: unsigned char SD_readSingleBlock(unsigned long startBlock, unsigned char * Buffer1) {
+[v _SD_readSingleBlock `(uc ~T0 @X0 1 ef2`ul`*uc ]
+{
+[e :U _SD_readSingleBlock ]
+[v _startBlock `ul ~T0 @X0 1 r1 ]
+[v _Buffer1 `*uc ~T0 @X0 1 r2 ]
+[f ]
+"189
+[; ;sd_routines.c: 189:     unsigned char response;
+[v _response `uc ~T0 @X0 1 a ]
+"190
+[; ;sd_routines.c: 190:     unsigned int i, retry = 0;
+[v _i `ui ~T0 @X0 1 a ]
+[v _retry `ui ~T0 @X0 1 a ]
+[e = _retry -> -> 0 `i `ui ]
+"192
+[; ;sd_routines.c: 192:     response = SD_sendCommand(17, startBlock);
+[e = _response ( _SD_sendCommand (2 , -> -> 17 `i `uc _startBlock ]
+"195
+[; ;sd_routines.c: 195:     if (response != 0x00) return response;
+[e $ ! != -> _response `i -> 0 `i 293  ]
+[e ) _response ]
+[e $UE 292  ]
+[e :U 293 ]
+"197
+[; ;sd_routines.c: 197:     PORTC &= 0xFE;
+[e =& _PORTC -> -> 254 `i `Vuc ]
+"199
+[; ;sd_routines.c: 199:     retry = 0;
+[e = _retry -> -> 0 `i `ui ]
+"200
+[; ;sd_routines.c: 200:     while (SPI1_Read(0xFF) != 0xfe)
+[e $U 294  ]
+[e :U 295 ]
+"201
+[; ;sd_routines.c: 201:         if (retry++ > 0xFFfe) {
+[e $ ! > ++ _retry -> -> 1 `i `ui -> 65534 `ui 297  ]
+{
+"202
+[; ;sd_routines.c: 202:             PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"203
+[; ;sd_routines.c: 203:             return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 292  ]
+"204
+[; ;sd_routines.c: 204:         }
+}
+[e :U 297 ]
+[e :U 294 ]
+"200
+[; ;sd_routines.c: 200:     while (SPI1_Read(0xFF) != 0xfe)
+[e $ != -> ( _SPI1_Read (1 -> -> 255 `i `uc `i -> 254 `i 295  ]
+[e :U 296 ]
+"206
+[; ;sd_routines.c: 206:     for (i = 0; i < 512; i++)
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 512 `i `ui 298  ]
+[e $U 299  ]
+[e :U 298 ]
+"207
+[; ;sd_routines.c: 207:         Buffer1[i] = SPI1_Read(0xFF);
+[e = *U + _Buffer1 * -> _i `ux -> -> # *U _Buffer1 `ui `ux ( _SPI1_Read (1 -> -> 255 `i `uc ]
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 512 `i `ui 298  ]
+[e :U 299 ]
+}
+"209
+[; ;sd_routines.c: 209:     SPI1_Read(0xFF);
+[e ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"210
+[; ;sd_routines.c: 210:     SPI1_Read(0xFF);
+[e ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"212
+[; ;sd_routines.c: 212:     SPI1_Read(0xFF);
+[e ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"213
+[; ;sd_routines.c: 213:     PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"215
+[; ;sd_routines.c: 215:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 292  ]
+"216
+[; ;sd_routines.c: 216: }
+[e :UE 292 ]
+}
+"225
+[; ;sd_routines.c: 225: unsigned char SD_writeSingleBlock(unsigned long startBlock, unsigned char * Buffer1) {
+[v _SD_writeSingleBlock `(uc ~T0 @X0 1 ef2`ul`*uc ]
+{
+[e :U _SD_writeSingleBlock ]
+[v _startBlock `ul ~T0 @X0 1 r1 ]
+[v _Buffer1 `*uc ~T0 @X0 1 r2 ]
+[f ]
+"226
+[; ;sd_routines.c: 226:     unsigned char response;
+[v _response `uc ~T0 @X0 1 a ]
+"227
+[; ;sd_routines.c: 227:     unsigned int i, retry = 0;
+[v _i `ui ~T0 @X0 1 a ]
+[v _retry `ui ~T0 @X0 1 a ]
+[e = _retry -> -> 0 `i `ui ]
+"229
+[; ;sd_routines.c: 229:     response = SD_sendCommand(24, startBlock);
+[e = _response ( _SD_sendCommand (2 , -> -> 24 `i `uc _startBlock ]
+"231
+[; ;sd_routines.c: 231:     if (response != 0x00) return response;
+[e $ ! != -> _response `i -> 0 `i 302  ]
+[e ) _response ]
+[e $UE 301  ]
+[e :U 302 ]
+"233
+[; ;sd_routines.c: 233:     PORTC &= 0xFE;
+[e =& _PORTC -> -> 254 `i `Vuc ]
+"235
+[; ;sd_routines.c: 235:     SPI1_Write(0xfe);
+[e ( _SPI1_Write (1 -> -> 254 `i `uc ]
+"236
+[; ;sd_routines.c: 236:     for (i = 0; i < 512; i++)
+{
+[e = _i -> -> 0 `i `ui ]
+[e $ < _i -> -> 512 `i `ui 303  ]
+[e $U 304  ]
+[e :U 303 ]
+"237
+[; ;sd_routines.c: 237:         SPI1_Write(Buffer1[i]);
+[e ( _SPI1_Write (1 *U + _Buffer1 * -> _i `ux -> -> # *U _Buffer1 `ui `ux ]
+[e ++ _i -> -> 1 `i `ui ]
+[e $ < _i -> -> 512 `i `ui 303  ]
+[e :U 304 ]
+}
+"239
+[; ;sd_routines.c: 239:     SPI1_Write(0xFF);
+[e ( _SPI1_Write (1 -> -> 255 `i `uc ]
+"240
+[; ;sd_routines.c: 240:     SPI1_Write(0xFF);
+[e ( _SPI1_Write (1 -> -> 255 `i `uc ]
+"242
+[; ;sd_routines.c: 242:     response = SPI1_Read(0xFF);
+[e = _response ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"243
+[; ;sd_routines.c: 243:     if ((response & 0x1f) != 0x05)
+[e $ ! != & -> _response `i -> 31 `i -> 5 `i 306  ]
+"245
+[; ;sd_routines.c: 245:     {
+{
+"246
+[; ;sd_routines.c: 246:         PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"247
+[; ;sd_routines.c: 247:         return response;
+[e ) _response ]
+[e $UE 301  ]
+"248
+[; ;sd_routines.c: 248:     }
+}
+[e :U 306 ]
+"250
+[; ;sd_routines.c: 250:     while (!SPI1_Read(0xFF))
+[e $U 307  ]
+[e :U 308 ]
+"251
+[; ;sd_routines.c: 251:         if ((retry++) > 0xFFfe) {
+[e $ ! > ++ _retry -> -> 1 `i `ui -> 65534 `ui 310  ]
+{
+"252
+[; ;sd_routines.c: 252:             PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"253
+[; ;sd_routines.c: 253:             return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 301  ]
+"254
+[; ;sd_routines.c: 254:         }
+}
+[e :U 310 ]
+[e :U 307 ]
+"250
+[; ;sd_routines.c: 250:     while (!SPI1_Read(0xFF))
+[e $ ! != -> ( _SPI1_Read (1 -> -> 255 `i `uc `i -> 0 `i 308  ]
+[e :U 309 ]
+"256
+[; ;sd_routines.c: 256:     PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"257
+[; ;sd_routines.c: 257:     SPI1_Write(0xFF);
+[e ( _SPI1_Write (1 -> -> 255 `i `uc ]
+"258
+[; ;sd_routines.c: 258:     PORTC &= 0xFE;
+[e =& _PORTC -> -> 254 `i `Vuc ]
+"260
+[; ;sd_routines.c: 260:     while (!SPI1_Read(0xFF))
+[e $U 311  ]
+[e :U 312 ]
+"261
+[; ;sd_routines.c: 261:         if (retry++ > 0xFFfe) {
+[e $ ! > ++ _retry -> -> 1 `i `ui -> 65534 `ui 314  ]
+{
+"262
+[; ;sd_routines.c: 262:             PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"263
+[; ;sd_routines.c: 263:             return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 301  ]
+"264
+[; ;sd_routines.c: 264:         }
+}
+[e :U 314 ]
+[e :U 311 ]
+"260
+[; ;sd_routines.c: 260:     while (!SPI1_Read(0xFF))
+[e $ ! != -> ( _SPI1_Read (1 -> -> 255 `i `uc `i -> 0 `i 312  ]
+[e :U 313 ]
+"265
+[; ;sd_routines.c: 265:     PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"266
+[; ;sd_routines.c: 266:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 301  ]
+"267
+[; ;sd_routines.c: 267: }
+[e :UE 301 ]
+}
+"276
+[; ;sd_routines.c: 276: unsigned char SD_readMultipleBlock(unsigned long startBlock, unsigned char * Buffer1, unsigned char * Buffer2) {
+[v _SD_readMultipleBlock `(uc ~T0 @X0 1 ef3`ul`*uc`*uc ]
+{
+[e :U _SD_readMultipleBlock ]
+[v _startBlock `ul ~T0 @X0 1 r1 ]
+[v _Buffer1 `*uc ~T0 @X0 1 r2 ]
+[v _Buffer2 `*uc ~T0 @X0 1 r3 ]
+[f ]
+"277
+[; ;sd_routines.c: 277:     unsigned char totalBlocks;
+[v _totalBlocks `uc ~T0 @X0 1 a ]
+"278
+[; ;sd_routines.c: 278:     unsigned char response;
+[v _response `uc ~T0 @X0 1 a ]
+"279
+[; ;sd_routines.c: 279:     unsigned int i, retry;
+[v _i `ui ~T0 @X0 1 a ]
+[v _retry `ui ~T0 @X0 1 a ]
+"280
+[; ;sd_routines.c: 280:     unsigned int index;
+[v _index `ui ~T0 @X0 1 a ]
+"282
+[; ;sd_routines.c: 282:     totalBlocks = 4;
+[e = _totalBlocks -> -> 4 `i `uc ]
+"283
+[; ;sd_routines.c: 283:     retry = 0;
+[e = _retry -> -> 0 `i `ui ]
+"285
+[; ;sd_routines.c: 285:     response = SD_sendCommand(18, startBlock);
+[e = _response ( _SD_sendCommand (2 , -> -> 18 `i `uc _startBlock ]
+"287
+[; ;sd_routines.c: 287:     if (response != 0x00) return response;
+[e $ ! != -> _response `i -> 0 `i 316  ]
+[e ) _response ]
+[e $UE 315  ]
+[e :U 316 ]
+"289
+[; ;sd_routines.c: 289:     PORTC &= 0xFE;
+[e =& _PORTC -> -> 254 `i `Vuc ]
+"291
+[; ;sd_routines.c: 291:     while (totalBlocks) {
+[e $U 317  ]
+[e :U 318 ]
+{
+"292
+[; ;sd_routines.c: 292:         retry = 0;
+[e = _retry -> -> 0 `i `ui ]
+"293
+[; ;sd_routines.c: 293:         while (SPI1_Read(0xFF) != 0xfe)
+[e $U 320  ]
+[e :U 321 ]
+"295
+[; ;sd_routines.c: 295:             if (retry++ > 0xFFfe) {
+[e $ ! > ++ _retry -> -> 1 `i `ui -> 65534 `ui 323  ]
+{
+"296
+[; ;sd_routines.c: 296:                 PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"297
+[; ;sd_routines.c: 297:                 return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 315  ]
+"298
+[; ;sd_routines.c: 298:             }
+}
+[e :U 323 ]
+[e :U 320 ]
+"293
+[; ;sd_routines.c: 293:         while (SPI1_Read(0xFF) != 0xfe)
+[e $ != -> ( _SPI1_Read (1 -> -> 255 `i `uc `i -> 254 `i 321  ]
+[e :U 322 ]
+"301
+[; ;sd_routines.c: 301:         if ((totalBlocks == 2) || (totalBlocks == 4)) index = 0;
+[e $ ! || == -> _totalBlocks `i -> 2 `i == -> _totalBlocks `i -> 4 `i 324  ]
+[e = _index -> -> 0 `i `ui ]
+[e $U 325  ]
+"302
+[; ;sd_routines.c: 302:         else index = 512;
+[e :U 324 ]
+[e = _index -> -> 512 `i `ui ]
+[e :U 325 ]
+"304
+[; ;sd_routines.c: 304:         if (totalBlocks > 2)
+[e $ ! > -> _totalBlocks `i -> 2 `i 326  ]
+"305
+[; ;sd_routines.c: 305:             for (i = index; i < index + 512; i++)
+{
+[e = _i _index ]
+[e $U 330  ]
+[e :U 327 ]
+"306
+[; ;sd_routines.c: 306:                 Buffer1[i] = SPI1_Read(0xFF);
+[e = *U + _Buffer1 * -> _i `ux -> -> # *U _Buffer1 `ui `ux ( _SPI1_Read (1 -> -> 255 `i `uc ]
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 330 ]
+[e $ < _i + _index -> -> 512 `i `ui 327  ]
+[e :U 328 ]
+}
+[e $U 331  ]
+"307
+[; ;sd_routines.c: 307:         else
+[e :U 326 ]
+"308
+[; ;sd_routines.c: 308:             for (i = index; i < index + 512; i++)
+{
+[e = _i _index ]
+[e $U 335  ]
+[e :U 332 ]
+"309
+[; ;sd_routines.c: 309:                 Buffer2[i] = SPI1_Read(0xFF);
+[e = *U + _Buffer2 * -> _i `ux -> -> # *U _Buffer2 `ui `ux ( _SPI1_Read (1 -> -> 255 `i `uc ]
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 335 ]
+[e $ < _i + _index -> -> 512 `i `ui 332  ]
+[e :U 333 ]
+}
+[e :U 331 ]
+"314
+[; ;sd_routines.c: 314:         SPI1_Read(0xFF);
+[e ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"315
+[; ;sd_routines.c: 315:         SPI1_Read(0xFF);
+[e ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"316
+[; ;sd_routines.c: 316:         SPI1_Read(0xFF);
+[e ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"317
+[; ;sd_routines.c: 317:         totalBlocks--;
+[e -- _totalBlocks -> -> 1 `i `uc ]
+"318
+[; ;sd_routines.c: 318:     }
+}
+[e :U 317 ]
+"291
+[; ;sd_routines.c: 291:     while (totalBlocks) {
+[e $ != -> _totalBlocks `i -> 0 `i 318  ]
+[e :U 319 ]
+"320
+[; ;sd_routines.c: 320:     SD_sendCommand(12, 0);
+[e ( _SD_sendCommand (2 , -> -> 12 `i `uc -> -> -> 0 `i `l `ul ]
+"321
+[; ;sd_routines.c: 321:     PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"322
+[; ;sd_routines.c: 322:     SPI1_Read(0xFF);
+[e ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"324
+[; ;sd_routines.c: 324:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 315  ]
+"325
+[; ;sd_routines.c: 325: }
+[e :UE 315 ]
+}
+"334
+[; ;sd_routines.c: 334: unsigned char SD_writeMultipleBlock(unsigned long startBlock, unsigned char upis_Buffer1,
+[v _SD_writeMultipleBlock `(uc ~T0 @X0 1 ef4`ul`uc`*uc`*uc ]
+"335
+[; ;sd_routines.c: 335:         unsigned char * Buffer1, unsigned char * Buffer2) {
+{
+[e :U _SD_writeMultipleBlock ]
+"334
+[; ;sd_routines.c: 334: unsigned char SD_writeMultipleBlock(unsigned long startBlock, unsigned char upis_Buffer1,
+[v _startBlock `ul ~T0 @X0 1 r1 ]
+[v _upis_Buffer1 `uc ~T0 @X0 1 r2 ]
+"335
+[; ;sd_routines.c: 335:         unsigned char * Buffer1, unsigned char * Buffer2) {
+[v _Buffer1 `*uc ~T0 @X0 1 r3 ]
+[v _Buffer2 `*uc ~T0 @X0 1 r4 ]
+[f ]
+"337
+[; ;sd_routines.c: 337:     unsigned char totalBlocks;
+[v _totalBlocks `uc ~T0 @X0 1 a ]
+"338
+[; ;sd_routines.c: 338:     unsigned char response;
+[v _response `uc ~T0 @X0 1 a ]
+"339
+[; ;sd_routines.c: 339:     unsigned int i, retry;
+[v _i `ui ~T0 @X0 1 a ]
+[v _retry `ui ~T0 @X0 1 a ]
+"340
+[; ;sd_routines.c: 340:     unsigned long blockCounter;
+[v _blockCounter `ul ~T0 @X0 1 a ]
+"341
+[; ;sd_routines.c: 341:     unsigned int index;
+[v _index `ui ~T0 @X0 1 a ]
+"343
+[; ;sd_routines.c: 343:     retry = 0;
+[e = _retry -> -> 0 `i `ui ]
+"344
+[; ;sd_routines.c: 344:     totalBlocks = 2;
+[e = _totalBlocks -> -> 2 `i `uc ]
+"345
+[; ;sd_routines.c: 345:     blockCounter = 0;
+[e = _blockCounter -> -> -> 0 `i `l `ul ]
+"346
+[; ;sd_routines.c: 346:     response = SD_sendCommand(25, startBlock);
+[e = _response ( _SD_sendCommand (2 , -> -> 25 `i `uc _startBlock ]
+"347
+[; ;sd_routines.c: 347:     if (response != 0x00) return response;
+[e $ ! != -> _response `i -> 0 `i 337  ]
+[e ) _response ]
+[e $UE 336  ]
+[e :U 337 ]
+"349
+[; ;sd_routines.c: 349:     PORTC &= 0xFE;
+[e =& _PORTC -> -> 254 `i `Vuc ]
+"352
+[; ;sd_routines.c: 352:     while (blockCounter < totalBlocks) {
+[e $U 338  ]
+[e :U 339 ]
+{
+"353
+[; ;sd_routines.c: 353:         SPI1_Write(0xfc);
+[e ( _SPI1_Write (1 -> -> 252 `i `uc ]
+"356
+[; ;sd_routines.c: 356:         if (blockCounter == 0) index = 0;
+[e $ ! == _blockCounter -> -> -> 0 `i `l `ul 341  ]
+[e = _index -> -> 0 `i `ui ]
+[e $U 342  ]
+"357
+[; ;sd_routines.c: 357:         else index = 512;
+[e :U 341 ]
+[e = _index -> -> 512 `i `ui ]
+[e :U 342 ]
+"359
+[; ;sd_routines.c: 359:         if (upis_Buffer1 == 0x00)
+[e $ ! == -> _upis_Buffer1 `i -> 0 `i 343  ]
+"360
+[; ;sd_routines.c: 360:             for (i = index; i < index + 512; i++)
+{
+[e = _i _index ]
+[e $U 347  ]
+[e :U 344 ]
+"361
+[; ;sd_routines.c: 361:                 SPI1_Write(Buffer1[i]);
+[e ( _SPI1_Write (1 *U + _Buffer1 * -> _i `ux -> -> # *U _Buffer1 `ui `ux ]
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 347 ]
+[e $ < _i + _index -> -> 512 `i `ui 344  ]
+[e :U 345 ]
+}
+[e $U 348  ]
+"362
+[; ;sd_routines.c: 362:         else
+[e :U 343 ]
+"363
+[; ;sd_routines.c: 363:             for (i = index; i < index + 512; i++)
+{
+[e = _i _index ]
+[e $U 352  ]
+[e :U 349 ]
+"364
+[; ;sd_routines.c: 364:                 SPI1_Write(Buffer2[i]);
+[e ( _SPI1_Write (1 *U + _Buffer2 * -> _i `ux -> -> # *U _Buffer2 `ui `ux ]
+[e ++ _i -> -> 1 `i `ui ]
+[e :U 352 ]
+[e $ < _i + _index -> -> 512 `i `ui 349  ]
+[e :U 350 ]
+}
+[e :U 348 ]
+"366
+[; ;sd_routines.c: 366:         SPI1_Write(0xFF);
+[e ( _SPI1_Write (1 -> -> 255 `i `uc ]
+"367
+[; ;sd_routines.c: 367:         SPI1_Write(0xFF);
+[e ( _SPI1_Write (1 -> -> 255 `i `uc ]
+"368
+[; ;sd_routines.c: 368:         response = SPI1_Read(0xFF);
+[e = _response ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"370
+[; ;sd_routines.c: 370:         if ((response & 0x1f) != 0x05)
+[e $ ! != & -> _response `i -> 31 `i -> 5 `i 353  ]
+"371
+[; ;sd_routines.c: 371:         {
+{
+"372
+[; ;sd_routines.c: 372:             PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"373
+[; ;sd_routines.c: 373:             return response;
+[e ) _response ]
+[e $UE 336  ]
+"374
+[; ;sd_routines.c: 374:         }
+}
+[e :U 353 ]
+"376
+[; ;sd_routines.c: 376:         while (!SPI1_Read(0xFF))
+[e $U 354  ]
+[e :U 355 ]
+"377
+[; ;sd_routines.c: 377:             if (retry++ > 0xFFfe) {
+[e $ ! > ++ _retry -> -> 1 `i `ui -> 65534 `ui 357  ]
+{
+"378
+[; ;sd_routines.c: 378:                 PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"379
+[; ;sd_routines.c: 379:                 return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 336  ]
+"380
+[; ;sd_routines.c: 380:             }
+}
+[e :U 357 ]
+[e :U 354 ]
+"376
+[; ;sd_routines.c: 376:         while (!SPI1_Read(0xFF))
+[e $ ! != -> ( _SPI1_Read (1 -> -> 255 `i `uc `i -> 0 `i 355  ]
+[e :U 356 ]
+"382
+[; ;sd_routines.c: 382:         SPI1_Read(0xFF);
+[e ( _SPI1_Read (1 -> -> 255 `i `uc ]
+"383
+[; ;sd_routines.c: 383:         blockCounter++;
+[e ++ _blockCounter -> -> -> 1 `i `l `ul ]
+"384
+[; ;sd_routines.c: 384:     }
+}
+[e :U 338 ]
+"352
+[; ;sd_routines.c: 352:     while (blockCounter < totalBlocks) {
+[e $ < _blockCounter -> _totalBlocks `ul 339  ]
+[e :U 340 ]
+"386
+[; ;sd_routines.c: 386:     SPI1_Write(0xfd);
+[e ( _SPI1_Write (1 -> -> 253 `i `uc ]
+"387
+[; ;sd_routines.c: 387:     retry = 0;
+[e = _retry -> -> 0 `i `ui ]
+"389
+[; ;sd_routines.c: 389:     while (!SPI1_Read(0xFF))
+[e $U 358  ]
+[e :U 359 ]
+"390
+[; ;sd_routines.c: 390:         if (retry++ > 0xFFfe) {
+[e $ ! > ++ _retry -> -> 1 `i `ui -> 65534 `ui 361  ]
+{
+"391
+[; ;sd_routines.c: 391:             PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"392
+[; ;sd_routines.c: 392:             return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 336  ]
+"393
+[; ;sd_routines.c: 393:         }
+}
+[e :U 361 ]
+[e :U 358 ]
+"389
+[; ;sd_routines.c: 389:     while (!SPI1_Read(0xFF))
+[e $ ! != -> ( _SPI1_Read (1 -> -> 255 `i `uc `i -> 0 `i 359  ]
+[e :U 360 ]
+"395
+[; ;sd_routines.c: 395:     PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"397
+[; ;sd_routines.c: 397:     SPI1_Write(0xFF);
+[e ( _SPI1_Write (1 -> -> 255 `i `uc ]
+"398
+[; ;sd_routines.c: 398:     PORTC &= 0xFE;
+[e =& _PORTC -> -> 254 `i `Vuc ]
+"400
+[; ;sd_routines.c: 400:     while (!SPI1_Read(0xFF))
+[e $U 362  ]
+[e :U 363 ]
+"401
+[; ;sd_routines.c: 401:         if (retry++ > 0xFFfe) {
+[e $ ! > ++ _retry -> -> 1 `i `ui -> 65534 `ui 365  ]
+{
+"402
+[; ;sd_routines.c: 402:             PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"403
+[; ;sd_routines.c: 403:             return 1;
+[e ) -> -> 1 `i `uc ]
+[e $UE 336  ]
+"404
+[; ;sd_routines.c: 404:         }
+}
+[e :U 365 ]
+[e :U 362 ]
+"400
+[; ;sd_routines.c: 400:     while (!SPI1_Read(0xFF))
+[e $ ! != -> ( _SPI1_Read (1 -> -> 255 `i `uc `i -> 0 `i 363  ]
+[e :U 364 ]
+"405
+[; ;sd_routines.c: 405:     PORTC |= 0x01;
+[e =| _PORTC -> -> 1 `i `Vuc ]
+"407
+[; ;sd_routines.c: 407:     return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 336  ]
+"408
+[; ;sd_routines.c: 408: }
+[e :UE 336 ]
+}
