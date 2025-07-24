@@ -1,0 +1,356 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F2520 ]
+[d frameptr 4065 ]
+"4 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"86 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 F:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"85 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\projekat4.X\main.c
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+"108
+[v _init init `(v  1 e 1 0 ]
+"137
+[v _read_adc read_adc `(i  1 e 2 0 ]
+"169
+[v _transmit_data transmit_data `(v  1 e 1 0 ]
+"190
+[v _akvizicija akvizicija `(v  1 e 1 0 ]
+"230
+[v _ISR ISR `IIL(v  1 e 1 0 ]
+"271
+[v _main main `(v  1 e 1 0 ]
+"52 F:\Program Files\Microchip\xc8\v2.50\pic\include\proc/pic18f2520.h
+[v _PORTA PORTA `VEuc  1 e 1 @3968 ]
+[s S248 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"116
+[s S257 . 1 `uc 1 AN0 1 0 :1:0 
+`uc 1 AN1 1 0 :1:1 
+`uc 1 AN2 1 0 :1:2 
+`uc 1 AN3 1 0 :1:3 
+`uc 1 T0CKI 1 0 :1:4 
+`uc 1 AN4 1 0 :1:5 
+`uc 1 OSC2 1 0 :1:6 
+`uc 1 OSC1 1 0 :1:7 
+]
+[s S266 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 VREFN 1 0 :1:2 
+`uc 1 VREFP 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 SS 1 0 :1:5 
+`uc 1 CLKO 1 0 :1:6 
+`uc 1 CLKI 1 0 :1:7 
+]
+[s S274 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 NOT_SS 1 0 :1:5 
+]
+[s S277 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CVREF 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nSS 1 0 :1:5 
+]
+[s S282 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 LVDIN 1 0 :1:5 
+]
+[s S285 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 HLVDIN 1 0 :1:5 
+]
+[s S288 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 C1OUT 1 0 :1:4 
+`uc 1 C2OUT 1 0 :1:5 
+]
+[s S292 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :6:1 
+`uc 1 RJPU 1 0 :1:7 
+]
+[u S296 . 1 `S248 1 . 1 0 `S257 1 . 1 0 `S266 1 . 1 0 `S274 1 . 1 0 `S277 1 . 1 0 `S282 1 . 1 0 `S285 1 . 1 0 `S288 1 . 1 0 `S292 1 . 1 0 ]
+[v _PORTAbits PORTAbits `VES296  1 e 1 @3968 ]
+"271
+[v _PORTB PORTB `VEuc  1 e 1 @3969 ]
+[s S177 . 1 `uc 1 RB0 1 0 :1:0 
+`uc 1 RB1 1 0 :1:1 
+`uc 1 RB2 1 0 :1:2 
+`uc 1 RB3 1 0 :1:3 
+`uc 1 RB4 1 0 :1:4 
+`uc 1 RB5 1 0 :1:5 
+`uc 1 RB6 1 0 :1:6 
+`uc 1 RB7 1 0 :1:7 
+]
+"315
+[s S186 . 1 `uc 1 INT0 1 0 :1:0 
+`uc 1 INT1 1 0 :1:1 
+`uc 1 INT2 1 0 :1:2 
+`uc 1 CCP2 1 0 :1:3 
+`uc 1 KBI0 1 0 :1:4 
+`uc 1 KBI1 1 0 :1:5 
+`uc 1 KBI2 1 0 :1:6 
+`uc 1 KBI3 1 0 :1:7 
+]
+[s S195 . 1 `uc 1 AN12 1 0 :1:0 
+`uc 1 AN10 1 0 :1:1 
+`uc 1 AN8 1 0 :1:2 
+`uc 1 AN9 1 0 :1:3 
+`uc 1 AN11 1 0 :1:4 
+`uc 1 PGM 1 0 :1:5 
+`uc 1 PGC 1 0 :1:6 
+`uc 1 PGD 1 0 :1:7 
+]
+[s S204 . 1 `uc 1 FLT0 1 0 :1:0 
+]
+[s S206 . 1 `uc 1 . 1 0 :3:0 
+`uc 1 CCP2_PA2 1 0 :1:3 
+]
+[u S209 . 1 `S177 1 . 1 0 `S186 1 . 1 0 `S195 1 . 1 0 `S204 1 . 1 0 `S206 1 . 1 0 ]
+[v _PORTBbits PORTBbits `VES209  1 e 1 @3969 ]
+"450
+[v _PORTC PORTC `VEuc  1 e 1 @3970 ]
+"1036
+[v _TRISA TRISA `VEuc  1 e 1 @3986 ]
+"1258
+[v _TRISB TRISB `VEuc  1 e 1 @3987 ]
+"1480
+[v _TRISC TRISC `VEuc  1 e 1 @3988 ]
+[s S24 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"1512
+[s S33 . 1 `uc 1 RC0 1 0 :1:0 
+`uc 1 RC1 1 0 :1:1 
+`uc 1 RC2 1 0 :1:2 
+`uc 1 RC3 1 0 :1:3 
+`uc 1 RC4 1 0 :1:4 
+`uc 1 RC5 1 0 :1:5 
+`uc 1 RC6 1 0 :1:6 
+`uc 1 RC7 1 0 :1:7 
+]
+[u S42 . 1 `S24 1 . 1 0 `S33 1 . 1 0 ]
+[v _TRISCbits TRISCbits `VES42  1 e 1 @3988 ]
+"2265
+[v _RCSTA RCSTA `VEuc  1 e 1 @4011 ]
+[s S66 . 1 `uc 1 TX9D 1 0 :1:0 
+`uc 1 TRMT 1 0 :1:1 
+`uc 1 BRGH 1 0 :1:2 
+`uc 1 SENDB 1 0 :1:3 
+`uc 1 SYNC 1 0 :1:4 
+`uc 1 TXEN 1 0 :1:5 
+`uc 1 TX9 1 0 :1:6 
+`uc 1 CSRC 1 0 :1:7 
+]
+"2514
+[s S75 . 1 `uc 1 TX9D1 1 0 :1:0 
+`uc 1 TRMT1 1 0 :1:1 
+`uc 1 BRGH1 1 0 :1:2 
+`uc 1 SENDB1 1 0 :1:3 
+`uc 1 SYNC1 1 0 :1:4 
+`uc 1 TXEN1 1 0 :1:5 
+`uc 1 TX91 1 0 :1:6 
+`uc 1 CSRC1 1 0 :1:7 
+]
+[s S84 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 TX8_9 1 0 :1:6 
+]
+[s S87 . 1 `uc 1 TXD8 1 0 :1:0 
+]
+[u S89 . 1 `S66 1 . 1 0 `S75 1 . 1 0 `S84 1 . 1 0 `S87 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES89  1 e 1 @4012 ]
+"2731
+[v _TXREG TXREG `VEuc  1 e 1 @4013 ]
+"2755
+[v _SPBRG SPBRG `VEuc  1 e 1 @4015 ]
+"2767
+[v _SPBRGH SPBRGH `VEuc  1 e 1 @4016 ]
+[s S118 . 1 `uc 1 ABDEN 1 0 :1:0 
+`uc 1 WUE 1 0 :1:1 
+`uc 1 . 1 0 :1:2 
+`uc 1 BRG16 1 0 :1:3 
+`uc 1 TXCKP 1 0 :1:4 
+`uc 1 RXDTP 1 0 :1:5 
+`uc 1 RCIDL 1 0 :1:6 
+`uc 1 ABDOVF 1 0 :1:7 
+]
+"3282
+[s S127 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 SCKP 1 0 :1:4 
+`uc 1 . 1 0 :1:5 
+`uc 1 RCMT 1 0 :1:6 
+]
+[s S132 . 1 `uc 1 . 1 0 :5:0 
+`uc 1 RXCKP 1 0 :1:5 
+]
+[s S135 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 W4E 1 0 :1:1 
+]
+[u S138 . 1 `S118 1 . 1 0 `S127 1 . 1 0 `S132 1 . 1 0 `S135 1 . 1 0 ]
+[v _BAUDCONbits BAUDCONbits `VES138  1 e 1 @4024 ]
+"3626
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @4032 ]
+"3697
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @4033 ]
+"3782
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @4034 ]
+[s S356 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_NOT_DONE 1 0 :1:1 
+]
+"3826
+[s S359 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :4:2 
+]
+[s S363 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+]
+[s S370 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 DONE 1 0 :1:1 
+]
+[s S373 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 NOT_DONE 1 0 :1:1 
+]
+[s S376 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 nDONE 1 0 :1:1 
+]
+[s S379 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO_DONE 1 0 :1:1 
+]
+[s S382 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GODONE 1 0 :1:1 
+]
+[u S385 . 1 `S356 1 . 1 0 `S359 1 . 1 0 `S363 1 . 1 0 `S370 1 . 1 0 `S373 1 . 1 0 `S376 1 . 1 0 `S379 1 . 1 0 `S382 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES385  1 e 1 @4034 ]
+"3908
+[v _ADRESL ADRESL `VEuc  1 e 1 @4035 ]
+"3915
+[v _ADRESH ADRESH `VEuc  1 e 1 @4036 ]
+"5175
+[v _T0CON T0CON `VEuc  1 e 1 @4053 ]
+"5265
+[v _TMR0L TMR0L `VEuc  1 e 1 @4054 ]
+"5272
+[v _TMR0H TMR0H `VEuc  1 e 1 @4055 ]
+"5699
+[v _INTCON INTCON `VEuc  1 e 1 @4082 ]
+[s S427 . 1 `uc 1 RBIF 1 0 :1:0 
+`uc 1 INT0IF 1 0 :1:1 
+`uc 1 TMR0IF 1 0 :1:2 
+`uc 1 RBIE 1 0 :1:3 
+`uc 1 INT0IE 1 0 :1:4 
+`uc 1 TMR0IE 1 0 :1:5 
+`uc 1 PEIE_GIEL 1 0 :1:6 
+`uc 1 GIE_GIEH 1 0 :1:7 
+]
+"5731
+[s S436 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 INT0F 1 0 :1:1 
+`uc 1 T0IF 1 0 :1:2 
+`uc 1 . 1 0 :1:3 
+`uc 1 INT0E 1 0 :1:4 
+`uc 1 T0IE 1 0 :1:5 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+[s S445 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 GIEL 1 0 :1:6 
+`uc 1 GIEH 1 0 :1:7 
+]
+[u S449 . 1 `S427 1 . 1 0 `S436 1 . 1 0 `S445 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES449  1 e 1 @4082 ]
+"80 D:\Users\Borko\Predmeti\Elektronika u medicini\Tuzna\Microchip_projekti\projekat4.X\main.c
+[v _cnt cnt `i  1 e 2 0 ]
+"81
+[v _ByteX ByteX `[14]uc  1 e 14 0 ]
+"83
+[v _res res `ui  1 e 2 0 ]
+"228
+[v _Flag1 Flag1 `uc  1 e 1 0 ]
+"271
+[v _main main `(v  1 e 1 0 ]
+{
+"281
+} 0
+"108
+[v _init init `(v  1 e 1 0 ]
+{
+"133
+} 0
+"85
+[v _UART_Init UART_Init `(v  1 e 1 0 ]
+{
+"106
+} 0
+"190
+[v _akvizicija akvizicija `(v  1 e 1 0 ]
+{
+"196
+[v akvizicija@i i `i  1 a 2 20 ]
+"195
+[v akvizicija@NInfrared NInfrared `i  1 a 2 18 ]
+"194
+[v akvizicija@NRed NRed `i  1 a 2 16 ]
+"193
+[v akvizicija@Infrared Infrared `i  1 a 2 14 ]
+"192
+[v akvizicija@Red Red `i  1 a 2 12 ]
+"226
+} 0
+"169
+[v _transmit_data transmit_data `(v  1 e 1 0 ]
+{
+[v transmit_data@data_8b data_8b `uc  1 p 1 wreg ]
+[v transmit_data@data_8b data_8b `uc  1 p 1 wreg ]
+[v transmit_data@data_8b data_8b `uc  1 p 1 3 ]
+"172
+} 0
+"137
+[v _read_adc read_adc `(i  1 e 2 0 ]
+{
+[v read_adc@BR_KANALA BR_KANALA `uc  1 p 1 wreg ]
+"138
+[v read_adc@i i `i  1 a 2 8 ]
+"137
+[v read_adc@BR_KANALA BR_KANALA `uc  1 p 1 wreg ]
+[v read_adc@BR_KANALA BR_KANALA `uc  1 p 1 7 ]
+"167
+} 0
+"230
+[v _ISR ISR `IIL(v  1 e 1 0 ]
+{
+"269
+} 0
