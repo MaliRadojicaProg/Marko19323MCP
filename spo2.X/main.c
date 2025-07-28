@@ -81,6 +81,7 @@ int cnt = 0;
 unsigned char ByteX[14];
 unsigned char FLAG = 0;
 unsigned int res = 0;
+int Led_Count=0;
 
 void UART_Init() {
     TRISCbits.RC6 = 1;
@@ -122,7 +123,10 @@ void init() {
     T0CON = 0b10001000;
     TMR0H = 0xFE;
     TMR0L = 0x18;
-
+    
+    T1CON = 0b10001001;
+    TMR1H=0xFF;
+    TMR1L=0xF3;
     UART_Init();
     TURN_ON_RED = 1;
     TURN_ON_INFRARED = 1;
@@ -130,12 +134,33 @@ void init() {
     SAMPLE_INFRARED = 0;
     SAMPLE_LIGHT = 0; // podesavanje prekida
     INTCON = 0xA0; // samo GIE=1, TMR0IE=1
+    PIE1=0x01;
 }
 
 
 
 int read_adc(unsigned char BR_KANALA) {
    // NAPISATI PROGRAMSKI KOD - ZADATAK 1
+  int result=0;
+  switch (BR_KANALA){
+    case 0:
+      ADCON0=0b00000011;
+    break;
+    case 1:
+      ADCON0=0b00000111;
+    break:
+    case 2:
+      ADCON0=0b00001011;
+    break;
+    case 3:
+      ADCON0=0b00001111;
+    break;
+  }
+  if(ADCON0bits.GO_DONE==0){
+//Konverzija je zavrsena
+    result=(ADRESH << 8) | (ADRESL);
+  }
+   return result;
 }
 
 void transmit_data(unsigned char data_8b) {
@@ -178,7 +203,10 @@ void akvizicija() {
     }
 	
     // NAPISATI PROGRAMSKI KOD - ZADATAK 2
-
+    ByteX[0]=0xAA;
+    ByteX[4]=(NRed & 0x03fc) << 6;
+    ByteX[5]=(NInfrared & 0x03fc)<<6;
+    ByteX[6]=(NRed<<14)|(0b00)<<6|((NInfrared & 0x0003)<<4)|(0b00);
     if (NRed > 922) ByteX[4] += 12; // prst gurnut suvise
     else if (NRed > 204) ByteX[4] += 4; // ok
     else ByteX[4] += 0; // prst izvucen
@@ -194,14 +222,52 @@ void akvizicija() {
 }
 
 unsigned char Flag1 = 0;
-
 void __interrupt(low_priority) ISR() {
     if ((INTCONbits.TMR0IF)&&(INTCONbits.TMR0IE)) {// Tajmer0interrupt
         INTCONbits.TMR0IF = 0;
-
+        Flag1=1;
         TMR0H = 0xFE;
         TMR0L = 0x18;
-		
+		  if((PIR1bits.TMR1IF) && (PIE1bits.TMR1IE)){
+        PIR1bits.TMR1IF=0;
+        TMR1H=0xFF;
+        TMR1L=0x37; //8Mhz/4=>2MHz=>0.5us*200=100us 65535-200=6535=0xff37
+      //100us interrupt
+        Led_Count++;
+        switch (Led_Count){
+        case 0:
+        TURN_ON_RED=0;
+        break;
+        case 2:
+        SAMPLE_RED=1;
+        break;
+        case 4:
+        SAMPLE_RED=0;
+        break;
+        case 6:
+        TURN_ON_RED=1;
+        break;
+        case 12:
+        SAMPLE_LIGHT=1;
+        break;
+        case 14:
+        SAMPLE_LIGHT=0;
+        break;
+        case 20:
+        TURN_ON_INFRARED=0;
+        break;
+        case 22:
+        SAMPLE_INFRARED=1;
+        break;
+        case 24:
+        SAMPLE_INFRARED=0;
+        break;
+        case 26:
+        TURN_ON_INFRARED=1;
+        Led_Count=0;
+        break;
+      }
+    }
 		// NAPISATI PROGRAMSKI KOD - ZADATAK 3
        
     }
@@ -209,5 +275,11 @@ void __interrupt(low_priority) ISR() {
 
 void main(void) {
 
+      init();
+      if(Flag1==1){
+    akvizicija();
+    Flag1=0;
+  }
+  return 0;
        // NAPISATI PROGRAMSKI KOD - ZADATAK 4
 }
