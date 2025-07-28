@@ -144,16 +144,20 @@ int read_adc(unsigned char BR_KANALA) {
   int result=0;
   switch (BR_KANALA){
     case 0:
+      __delay_us(2.4);
       ADCON0=0b00000011;
     break;
     case 1:
       ADCON0=0b00000111;
+      __delay_us(2.4);
     break:
     case 2:
       ADCON0=0b00001011;
+      __delay_us(2.4);
     break;
     case 3:
       ADCON0=0b00001111;
+     __delay_us(2.4); //temperatura je iznad 25C pa TCOFF=1.2us 
     break;
   }
   if(ADCON0bits.GO_DONE==0){
@@ -206,7 +210,7 @@ void akvizicija() {
     ByteX[0]=0xAA;
     ByteX[11]=(Red & 0x07f0) << 5;
     ByteX[12]=(Infrared & 0x07f0) << 5;
-    ByteX[13]=(Red & 0x000f)<<4|(Infrared & 0x000f);
+    ByteX[13]=((Red & 0x000f)<<4)|(Infrared & 0x000f);
     if (NRed > 922) ByteX[4] += 12; // prst gurnut suvise
     else if (NRed > 204) ByteX[4] += 4; // ok
     else ByteX[4] += 0; // prst izvucen
