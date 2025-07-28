@@ -204,9 +204,9 @@ void akvizicija() {
 	
     // NAPISATI PROGRAMSKI KOD - ZADATAK 2
     ByteX[0]=0xAA;
-    ByteX[4]=(NRed & 0x03fc) << 6;
-    ByteX[5]=(NInfrared & 0x03fc)<<6;
-    ByteX[6]=(NRed<<14)|(0b00)<<6|((NInfrared & 0x0003)<<4)|(0b00);
+    ByteX[11]=(NRed & 0x03fc) << 6;
+    ByteX[12]=(NInfrared & 0x03fc)<<6;
+    ByteX[13]=(NRed<<14)|(0b00)<<6|((NInfrared & 0x0003)<<4)|(0b00);
     if (NRed > 922) ByteX[4] += 12; // prst gurnut suvise
     else if (NRed > 204) ByteX[4] += 4; // ok
     else ByteX[4] += 0; // prst izvucen
