@@ -144,20 +144,24 @@ int read_adc(unsigned char BR_KANALA) {
   int result=0;
   switch (BR_KANALA){
     case 0:
+      ADCON0=0b00000001;
       __delay_us(2.4);
       ADCON0=0b00000011;
     break;
     case 1:
-      ADCON0=0b00000111;
+      ADCON0=0b00000101;
       __delay_us(2.4);
+      ADCON0=0b00000111;
     break:
     case 2:
-      ADCON0=0b00001011;
+      ADCON0=0b00001001;
       __delay_us(2.4);
+      ADCON0=0b00001011;
     break;
     case 3:
-      ADCON0=0b00001111;
+    ADCON0=0b00001101;
      __delay_us(2.4); //temperatura je iznad 25C pa TCOFF=1.2us 
+    ADCON0=0b00001111;
     break;
   }
   if(ADCON0bits.GO_DONE==0){
